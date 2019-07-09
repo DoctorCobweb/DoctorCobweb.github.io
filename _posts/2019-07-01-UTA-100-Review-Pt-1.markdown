@@ -15,6 +15,10 @@ Also, the author has always wondered if there was a way to learn what exactly we
 
 Double tie your shoelaces, check your nutrition, GPS lock your Garmin and get ready to push start because here we go. You've reached the (statistical) start line.
 
+<br/>
+<br/>
+<br/>
+<br/>
 ## Finish times and start groups
 This section aims to address high-level questions that are pretty common to any type of running event. We will concern ourselves with questions about start groups, how they differ amoungst each other, and the performance of different age groups. Start group mixing is visualized across the course by creating 'barcode' plots with the intention of better understanding the onset of congestion and how mixed up the field is once the later stages of the course are reached.
 
@@ -73,11 +77,15 @@ Digging into the data reveals 18 runners finished after 15hrs, with the slowest 
 
 <img src="/assets/img/top_bottom_18_runners_start_group_1_speeds.png">
 
+The solid/dotted lines are the top/bottom 18 runners, respectively.
+
 From the above graph, the section between Dunphys and Six Foot track drastically breaks up the start group 1 runners. This can be seen in the spread of runner speeds across the section. From past experience there are a number of acute up/down hill sections and more technical single track sections after Dunphys all the way up to ~10kms from Six Foot Track checkpoint. The changing course conditions could be affecting the performance of the bottom 18 runners, whereas the top 18 runners still have little variance in speed amougst themselves. We could be witnessing the inflection point defining the elites from the rest of the pack. One thing for certain is there's much more variance in the speeds of the bottom 18 start group 1 runners after dunphys. 
 
 Let's checkout race time instead of speed and look for the point of divergence between the top and bottom 18.
 
 <img src="/assets/img/top_bottom_18_runners_start_group_1_racetime.png">
+
+The solid/dotted lines are the top/bottom 18 runners, respectively.
 
 We see that the divergence begins at Dunphys and continues to grow monotonically all the way until the finish line. In other words, once Dunpys checkpoint is reached, the top 18 group 1 runners continually increase their lead from the bottom 18 group 1 runners. The bottom 18 never recover.
 
@@ -108,6 +116,8 @@ Notation is X hrs: Y mins = X:Y
 | Sewage Plant | 8:50 | 26:00 |
 | Furber Base | 9:20 | 28:00 |
 | Finish Line | 9:30 | 28:30 |
+
+**Table 2. Race time ranges at each checkpoint.**  
 
 As the race progresses the difference between the fastest and slowest runners always increases. But in what way? Linearly or exponentially, or what? By plotting the differences between the max and min at each checkpoint we can determine this relationship.
 
@@ -152,7 +162,10 @@ At Furber Base and the Finish Line we see a group *7* runner located about one v
 
 By definition the stand out performers necessarily stand out despite the different ways the dataset is analysed. All in all it just adds weight to how unique these performances were.
 
----
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 ## Dropouts/ DNFs
@@ -217,6 +230,8 @@ Back to the group 1 dropout percentage question.
 | 60+M      | 0       | 0        | NA               | NA |
 | 60+F      | 0       | 0        | NA               | NA |
 
+**Table 3. Group 1 dropout % split into age groups.**  
+
 In the above table, `Drop % `= $$ 100\big( \frac{Started - Finished}{Started}\big)$$, for a given age group. `Weighted Diff` is a way to quantify how much a particular age group, in a start group, contributes to the start group's dropout percentage, relative to the start group having the lowest drop % (which was group 2 at 12 %). See the appendix for how it's caclulated.
 
 
@@ -238,12 +253,12 @@ No runners dropped once they reached the Sewage checkpoint at 91km. They finishe
 It's nice to see that this perceived determination is validated by in data. One can easily be unsure in the interpretation of events at this stage of the race. You're just hanging on. One suspects that the feel good moments are almost 'made up' by due to the complete tiredness. But by inspecting the data we can see how determined the **entire** field of finishers are once they hit the 91km mark.
 
 Nothing stops them.
-
----
-
+<br/>
+<br/>
+<br/>
+<br/>
 ## Checkpoints
 
-### Intro
 Checkpoints are a double edge sword. They have pratical and motivational properties yet possess all the attributes of an island getaway. Warmth, comfort, rest and all the food and drink you could ever pine for. If runners are fortunate enough to also have a crew awaiting their arrival then beware! Stay too long and your 'checkpoint time' swoops in to deliver the final blow: a DNF will be statistically more likely than a finish.
 
 _Darling you got to let me know  
@@ -314,8 +329,6 @@ Cavest 1: The true way of determining this is to compare the heights of each fin
 
 Caveat 2: Looking at the above violin-plot shows that, to a good approximation, the distributions for male runners follow a unimodal distribution (aka "one hump on the camel's back"). Whereas the women distributions are multimodal (aka "two or more humps on the camel's back"). The following comparison applies better to unimodal distributions rather than multimodal ones, meaning that the women's guidelines for when they're more likely to drop are less accurate.
 
-Here are the average times spent at the three major checkpoints.
-
 | Checkpoint | Sex | Finished Race | Average Time Spent (mins) |
 |:-----------|:----|:--------------|:-----------|
 | Six Foot Track | F | No | 15 |
@@ -331,6 +344,7 @@ Here are the average times spent at the three major checkpoints.
 | QVH | M | No | 35 |
 | QVH | M | Yes | 18 |
 
+**Table 4. Average time spend at the three major checkpoints.**  
 
 ### Peak hour traffic. Arrival demand at checkpoints throughout the day.
 
@@ -347,7 +361,10 @@ This observation also applies to the gradient in arrival counts; load intensity 
 
 QVH has the longest operating hours with the first runner arriving at ~1pm and last at ~6am...17hours later! 
 
----
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## Closing thoughts
 
@@ -355,16 +372,21 @@ This concludes the first review of the UTA 100km 2019 event. Towards the end of 
 
 The next post in the series concerns itself with looking at the interactions of runners throughout the course. When viewed in this light the abilities of the elite runners indeed come to the fore.
 
----
+<br/>
+<br/>
+<br/>
+<br/>
 
-Other post in the UTA 100 series:
+## Other post in the UTA 100 series
 
 <a href="{{ site.baseurl }}{% post_url 2019-07-02-UTA-100-Review-Pt-2 %}">UTA 100 Review Pt 2: Networks of runner interactions</a>
 
 <a href="{{ site.baseurl }}{% post_url 2019-07-03-UTA-100-Review-Pt-3 %}">UTA 100 Review Pt 3: Top 10 and how they train</a>
 
-
----
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## Appendix
 
