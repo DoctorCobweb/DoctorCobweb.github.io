@@ -1,0 +1,407 @@
+---
+layout: post
+title:  "UTA 100 Review Pt 1: DNFs, finish times, checkpoints"
+date:   2019-07-01 10:59:31 +1000
+categories: running 
+---
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+Welcome to Part 1 of an in-depth review of the 2019 Ultra Trail Australia 100km event. In this series of blog posts we will use the publically available data from [livetrail][livetrail-uta] and [strava][strava] to discover how the elite runners train, standout performances, and general runner/event management insights. Hopefully by knowing more about this event, future participants will be in a better position to 'tick off' their best-case-scenario goals for which they set for themselves. 
+
+Also, the author has always wondered if there was a way to learn what exactly went on during the event. Imagine if there were live commentators for the event, eg the veritable [Bruce McAvaney][bruce]. What would have been the highlights of the day? What did the 30,000ft view look like? Were there any truly heroic tales to tell? What can the *data* tell us and how can it be used to construct a much richer narrative for this already unique event? That is indeed the real burning motivation for doing this series of posts. Along the way we may learn something useful about how to better approach our training and race day.
+
+Double tie your shoelaces, check your nutrition, GPS lock your Garmin and get ready to push start because here we go. You've reached the (statistical) start line.
+
+## Finish times and start groups
+This section aims to address high-level questions that are pretty common to any type of running event. We will concern ourselves with questions about start groups, how they differ amoungst each other, and the performance of different age groups. Start group mixing is visualized across the course by creating 'barcode' plots with the intention of better understanding the onset of congestion and how mixed up the field is once the later stages of the course are reached.
+
+
+### Finish time distribution: Overall
+What is the most common *hourly* finishing time? In marathon parlance, someone who finishes in 2:30:01 (hrs:mins:secs) is gratuitously considered as good as someone who takes 2:30:59. They're both a `2:30` runner. Who cares about seconds in a marathon, really. A natural extension of this to ultras is to also disregard the minutes (!). So two UTA 100km finishers who took 14:01:01, 14:59:01 respectively, are considered `14 hr` level runners.
+
+Q. What does an extra 59 minutes really mean to someone in an ultra?
+
+A. Fractionally, it's only a *tiny* bit more of suffering. May as well just round it down to zero.
+
+<img src="/assets/img/distribution_of_runner_finishing_times.png">
+
+The most common finishing time is 17hrs, followed by 15hrs, then 19hrs. Take a look at how many runners finished in 9 or 10hrs. Not many. Immediately we see how rare and special they are. There's a big difference between the number of runners who finished in 11hrs and those who finished in 9 or 10hrs. The runners at the sharp end of the field are fast. Like reaaallly fast.
+We will revist these elite runners in another blog post when we ask about how they train, how they avoid injury, and how their methodologies can be adapted to be used in other training plans.  After the 21hr finishers we see roughly the same number of runners finishing in each hour category, all the way up to 27hrs. There were some runners out there for 28hrs. To put that into perspective imagine you finish mid-pack, clean yourself up, eat pizza, sleep 8hrs then go out for breakfast and coffee the next morning. The time that you pick up the bill for breakfast is about the same time as these people are crossing the line.  
+
+Talk about perseverance and determination.
+
+Who is doing it tougher...the elites or the warriors?
+
+### Finish time distribution: Start group
+Let's segment the data in start groups before plotting finishing times. This will show how each start group performed, but more importantly will enable the comparison of runners from different start groups. In doing so, we make our first observation of runners who performed well beyond their start group intended finish times.
+
+The graph below is something called a 'swarm plot' and is commonly used when comparing categories in data. In our case the categories are start groups. Within each start group there is horizontal dispersion for a given height aka. christmas tree braches. In other words, if a start group has christmas tree braches that are very *wide* then it means lots of runners had similar finishing times. That's all.
+
+<img src="/assets/img/distribution_finish_times_per_start_group.png">
+
+Firstly note the general trend that as we move from start group 1 to start group 7, groups become more stretched out vertically. There is a greater range of finishing times for people in start group 7 than for start group 1. In statistically slanted language we would say that start group 7 had greater variance in finishing times than for all other groups starting before it. This is not so suprising. Start group 7 is reserved for slower indivuals but also those runners who provided no information on past race performances. There may well be some strong runners who got allocated to start last because they failed to have, or supply, information about how fast they were. To a first order of approximation one can also assume that faster runners probably train more and so are more 'dialled in' wrt their fitness level and capability. Which means their abilites are better defined and better placement into start groups that reflect their ability occurs. 
+
+Check out start group 1. The bulk of the runners finished roughly between 11-13.5hrs, the fastest 4 runners finishing roughly the same time, and the long tail of runners taking longer than 15hrs. The 2 slowest runners were passed by most of start group 2 and 3. They were also passed by runners from all other start groups, even start group 7. This suggests that some runners in start group 7 had performed so well that they caught most of the field and even some start group 1 runners. Let's look into this further.
+
+#### Fastest group 7 runners
+
+The three fastest runners in start group 7 had finishing times of less than 15hrs. To get a handle on what that means, draw a horizontal line from the fastest start group 7 runner. Every dot that is above that line coincides with a runner they passed. That's the majority of the field! This person passed all group 6, all group 5, all group 4, all group 3, most group 2, about half of group 1 runners. Wow. The same story for the 2nd and 3rd fastet group 7 runners.
+
+What must have that felt like? On average, how many runners did they pass every hour? The following table contains the answers.
+
+
+| Runner Id | Start Group Time | Finish Line Race Time | People passed/ Perc of entire field | Passing rate (runners / hr) |  
+| :-------- | :--------------- | :-------------------- | :---------------------------------- | :---------------------------|
+| 1317      | 07:54:00         |  13:34:01             | 1016 / 75%                          |  74                         |
+| 1376      | 07:54:00         |  14:23:21             | 933  / 69%                          |  64                         |
+| 1425      | 07:54:00         |  14:43:46             | 898  / 66%                          |  60                         |
+
+**Table 1. Runner data for the top-3 runners in start group 7.**
+
+Imagine for a second what that must have felt like, to pass the majority UTA 100km runners, not to mention the last bastion of UTA 50km runners. The confidence boost. The constant internal system check that we all do when running, evaluating to "ALL SYSTEMS FIRING. CONTINUE".
+
+Passing a runner every minute on average for 14ish hrs. If there was ever an example of what the inimitable David Goggins refers to as `going out and taking souls`, this is it. If you're unfamiliar with [David Goggins][the_goggins] go check him out. Lacking long run motivation? No problems, put on the Goggins and you will have left 30km of rubber on the road without even noticing.
+
+
+#### Slowest group 1 runners
+Looking back at the swarm plot we see quite a lot of group 1 finishing times of 15hrs+. The UTA website states that start group 1 is for runners who expect to finish between 8hrs40mins and 13hrs46min so these runners were either miscategorized or had a much tougher than expected day.   
+
+Digging into the data reveals 18 runners finished after 15hrs, with the slowest being around 18hrs. Let's take the top and bottom 18 runners in start group 1 across the course.
+
+<img src="/assets/img/top_bottom_18_runners_start_group_1_speeds.png">
+
+From the above graph, the section between Dunphys and Six Foot track drastically breaks up the start group 1 runners. This can be seen in the spread of runner speeds across the section. From past experience there are a number of acute up/down hill sections and more technical single track sections after Dunphys all the way up to ~10kms from Six Foot Track checkpoint. The changing course conditions could be affecting the performance of the bottom 18 runners, whereas the top 18 runners still have little variance in speed amougst themselves. We could be witnessing the inflection point defining the elites from the rest of the pack. One thing for certain is there's much more variance in the speeds of the bottom 18 start group 1 runners after dunphys. 
+
+Let's checkout race time instead of speed and look for the point of divergence between the top and bottom 18.
+
+<img src="/assets/img/top_bottom_18_runners_start_group_1_racetime.png">
+
+We see that the divergence begins at Dunphys and continues to grow monotonically all the way until the finish line. In other words, once Dunpys checkpoint is reached, the top 18 group 1 runners continually increase their lead from the bottom 18 group 1 runners. The bottom 18 never recover.
+
+
+The spread in runner times across the course looks interesting. How does the entire field look across the course?
+
+
+### Race time for all runners,  across the course
+
+<img src="/assets/img/expansion_of_race_time_across_course.png">
+
+
+By inspecting the graph above we can read off the minimum and max race times for each checkpoint. This information should help runners coordinate arrival times with their support crews or plan out intermediate goals which they need to hit in order to get a desired finish time. We chose to ignore checkpoints before Narrow Neck because there's not that much race time dispersion displayed.
+
+
+Notation is X hrs: Y mins = X:Y
+
+| Checkpoint| Race Time Min |  Race Time Max |   
+| :-------- | :--------------- | :-----------| 
+| Narrow Neck |1:00 | 2:30 |
+| Glenraphael | 1:50 | 4:20 |
+| Dunphys | 2:30 | 6:40 |
+| Ironpot | 3:00 | 7:50 |
+| Six Foot | 3:50 | 10:30 |
+| Katoomba Aquatic Centre | 5:00 | 14:00 |
+| Fairmont | 6:20 | 19:00 |
+| Queen Victoria Hospital | 7:00 | 21:00 |
+| Sewage Plant | 8:50 | 26:00 |
+| Furber Base | 9:20 | 28:00 |
+| Finish Line | 9:30 | 28:30 |
+
+As the race progresses the difference between the fastest and slowest runners always increases. But in what way? Linearly or exponentially, or what? By plotting the differences between the max and min at each checkpoint we can determine this relationship.
+
+
+<img src="/assets/img/delta_race_time_at_checkpoints.png">
+
+A linear fit describes the differences quite well. The elites run away from the field at a constant rate.
+
+In keeping with the approach of analysing performances across each checkpoint, we are led to our next investigation: how are runner speeds distributed between checkpoints. Suspected factors affecting the distributions of speeds are things like course profile, accumulation of fatigue, runner congestion, change in weather conditions etc.
+
+### Runner speeds throughout the course
+<img src="/assets/img/speed_distribution_between_checkpoints.png">
+
+When looking at the above graph one should understand that each checkpoint distribution refers to the runner speeds between that checkpoint and the one before it. For example, the Dunphys checkpoint distribution reflects runner speeds for the section between Glenraphael and Dunphys checkpoints. Another example is the Finish Line distribution; it contains the speeds for runners going from Furber Base to the finish line, which is basically the speeds up Furber Base steps.
+
+The distributions of speeds are much more concentrated in the first half of the race.
+
+Sections which contain very runnable terrain like smooth firetrack, flat non-technical single track are seen to the shift entire distribution towards the faster end of the spectrum. Examples of runnable sections are Narrow Neck to the end of Glenraphael drive, Iron Pot to Six Foot Track, and down Kedumba Pass which contributes to the Sewage Plant distribution. The corresponding distributions for these sections: Glenraphael, Six Foot, and Sewage checkpoints, are seen to shift leftwards as expected. Interestingly, the Sewage Plant checkpoint only *marginally* shifts leftwards. Further inspection of the course profile for this section reveals the fast downhill section is immediately followed by a slow, net-uphill section beginning at Jamieson's Creek, terminating at the Sewage Plant checkpoint. Runners have covered 80-90kms of the course, fatigue must also be a major contributor to slowing down speeds ie shifting the speed distribution towards the right.
+
+Have a look at the finish line distribution which contains information on speeds going up Furber Steps. Not so suprisingly we see that it has the largest jump towards slower speeds out of all distributions. That last ~1km of almost 45% (?!) incline is like a brick wall. Not only does the average runner speed get slower but the width of the distribution gets completly stretched out. It breaks people. Well, almost. Later on when we delve into dropout/DNF statistics we will see that despite the challenge of ascending Furber Steps, absolutely no one drops out. In the language of Stava...kudos.
+
+
+### Traffic, traffic, traffic
+
+The final visualation of this section is in regards to start group mixing. As the section title suggests, here we're concerned with runner traffic along the course and possible congestion points. To create the visualization below we colour each runner based on their start group, give them a rank based on the time they arrived at each checkpoint, then use rank to determine where on the vertical axis they should be plotted.
+
+<img src="/assets/img/start_group_mixing_barcode.png">
+
+As expected, there is more start group mixing as runners move through the course. 
+
+There is very little start group mixing at the 1km and 3km checkpoints. Not enough time has unfolded for faster runners in later starting groups to catch up. The barcode graphs for 1km and 3km imply this because they display clear bands of start groups.
+
+Mixing begins to be seen once runners reach Narrow Neck checkpoint. Some of the start group 1 runners have slowed down to reside in the top 3rd of start group 2 runners. Also, the fastest runners in start group 2 have placed themselves in the first half of start group 1 runners. Because start group 3 started close to 30mins after the previous group, there is a lot of distance to be made up if any runners are to catch up to start group 2. The results of holding back start group 3 for such a long time can be seen by looking at group 3 and group 2 colors for narrow neck. In particular, there appears to be only 1 or 2 runners from group 3 (light green lines) located in the group 2 band (dark green). 
+
+The last 2 groups display substantially more mixing by the time they reach Narrow Neck. This indicates that some of the runners in group 6 may well have been better off being categorized as group 7, and vice versa. 
+
+When a runner applies to enter the UTA 100 they are asked to provide the organizers with some other race preformance to help them be adequately categorized. Not providing such information automatically puts them in group 7. Perhaps this is what we're seeing here in group 7: faster runners who provided no previous performance, have started in the slowest group and are now moving quickly through the field.
+
+Looking at Fairmont checkpoint now. There is a thick dark blue line about half way up the barcode strip. This means we have a small pack of group 1 runners moving much slower than the average group 1 speed. Curiously enough you can see another pack at the Furber Base and Finish Line checkpoints, almost in the same vertical location. Without delving deeper into the data and locating the runner ids for this pack (and then following their results at subsequent checkpoints), one cannot say for certain that it is the same pack. Nevertheless, there is still a definite pack of group 1 runners who finish mid-field.
+
+At Furber Base and the Finish Line we see a group *7* runner located about one vertical 3rd up from the first place runner! They've run past most of the field. Wow. Looking at nearby runners indicates that this person was probably an extremely strong group 2 runner but was seeded in the last group. By identifying this person in the dataset and looking at the seedings list, we do see that they provided a previous performance and were classified as group 7. It's the same runner seen previously in the 'christmas tree branch' plots. It will be a recurring theme.
+
+By definition the stand out performers necessarily stand out despite the different ways the dataset is analysed. All in all it just adds weight to how unique these performances were.
+
+---
+
+
+## Dropouts/ DNFs
+
+No one wants to not finish what they started, especially something as challenging as UTA 100km. The payoff is so great. It's not about the medal, nor time (for most). It's that deep sense of satisfaction that consumes you after finishing, knowing you've finally done something which required you to perform at your best whilst entertaining the rather high likelihood of failure. Often little problems become amplified over long durations which UTA has in spades. Learn to address your problems quickly before the unthinkable happens. The. DNF.
+
+You're in for the highs and lows however intense they get. It's part of the allure of pushing your body and mental capacity to its limits. But sometimes you just gotta know when to fold 'em.
+
+Are you at risk? Where exactly along the course are you most at risk? And what can you do to mitigate the risk? How long should you spend at a checkpoint? Stay too long and you're statistically more likely to drop. But how long is too long?
+
+Read on to find out the answers.
+
+### Dropout percent per start group
+
+Let's start by looking at DNF percentage for each start group.
+
+<img src="/assets/img/dropout_percentage_per_start_group.png">
+
+Start group 7 had the highest dropout percentage at 30%. The lowest dropout percentage came from group *2* at 12%. 
+
+Curiously, start group 1 was not the lowest being 16%. One would have expected the fittest and fastest group to be the most reliable group at finishing, no? After all, these are the elites who probably train more on average than the rest of the field, are possibly more experienced, and physically suited to endurance events of this nature. Was the elite group composed of more runners at risk of dropping out?
+
+We begin to answer this question by looking at the dropout rates of each age group.
+
+### What age group has the highest dropout percentage?
+
+<img src="/assets/img/dropout_percentage_per_age_group.png">
+
+The age group most at risk of dropping out were the 60+ Men at 31%, by a large margin; the next most at risk were the 50-59 Women at 23%. The 30-39W age group had the lowest dropout percentage at 12%.
+
+Could it be that group 1 was composed of age group runners who were more likely to dropout? Another level of categorization in the data is needed, so we split the data into those who dropped per start group, *per age group*. Then we can look into each start group and see which age groups contributed to the overall dropout percentage for each start group.
+
+>An aside: [Simpson's Paradox][good_ol_simpson] in statistics relates to observing trends in data disappearing once smaller groups of data are combined. Misunderstanding Simpson's warning can seriously derail any form of trend analysis. You will literally make the wrong conclusions. By splitting the data into start group and age group we can tiptoe around the Simpon's Paradox impasse. Onwards.
+
+
+
+### DNF percentages per age group, per start group
+
+The following graph is rather informationally dense. Each age group has its own colour to aid with visualization across start groups.
+
+<img src="/assets/img/dropout_percentage_per_start_group_per_age_group.png">
+
+
+The non-existence of a bar for a particular age group means that no-one in that age group and start group dropped out. Every age group per start group had at least one runner start so the non-existence of a bar unambiguously means no-one dropped out.
+
+Across start group 8 we see the age group dropout percentages are more uniform than for any other start group. In other words, it had the most consistent dropouts per age group. This contributed to making it have the highest overall dropout percentage when only splitting the data up using start groups. We are seeing the underlying reason for why start group 7 had the highest dropout percentage.
+
+Start group 2 60+ Men had a 100% dropout percentage! To get a handle on the size of this observation we looked into how many 60+ Men started in group 2, which was only 3. Had there been 100 60+ Men in group 2 all dropping out, we could have inferred more but since there's only 3 there's not much more to say but "hey, look at that".
+
+Back to the group 1 dropout percentage question.
+
+| Age Group | Started | Finished | Drop %           | Weighted Diff (W) |
+|:----------|:--------|:---------|:-----------------|:------------------------|
+| 18-29M    | 19      | 16       | 16               | +0.36 |
+| 18-29W    | 4       | 3        | 25               | +0.25 |
+| 30-39M    | 81      | 69       | 15               | +1.16 |
+| 30-39W    | 12      | 12       | 0                | -0.69 |
+| 40-49M    | 64      | 50       | 22               | +3.00 |
+| 40-49W    | 8       | 6        | 25               | +0.50 |
+| 50-59M    | 21      | 20       | 5                | -0.70 |
+| 50-59W    | 1       | 1        | 0                | -0.06 |
+| 60+M      | 0       | 0        | NA               | NA |
+| 60+F      | 0       | 0        | NA               | NA |
+
+In the above table, `Drop % `= $$ 100\big( \frac{Started - Finished}{Started}\big)$$, for a given age group. `Weighted Diff` is a way to quantify how much a particular age group, in a start group, contributes to the start group's dropout percentage, relative to the start group having the lowest drop % (which was group 2 at 12 %). See the appendix for how it's caclulated.
+
+
+Comparing the W values we see that the 40-49M, followed by the 30-39M age group had the biggest influence in inflating the start group dropout %. 
+
+The 30-39W and 50-59M groups were the best at reducing the group 1 dropout %, wrt start group 2 dropout %.
+
+
+### DNFs across the course
+
+<img src="/assets/img/dropout_counts_at_each_checkpoint.png">
+
+The highest dropout count is at Katoomba Aquatic Centre, almost double the amount compared to every other checkpoint. Quite a lot dropout at Fairmont Hotel, comparable to the 2 other checkpoints Six Foot and Queen Vicotira Hospital.
+
+Note: There were some weird timing issues with the 1km and 3km checkpoint data making it inference difficult. Since we're more interested checkpoints having the most DNFs, we chose to leave these checkpoints out of the analysis.
+
+No runners dropped once they reached the Sewage checkpoint at 91km. They finished no matter what the circumstances were. Believe it or not, getting the opportunity to ascend Furber Steps at the 99km mark is a true privilage. You've been pushing *all day* and the nagging little thought that you've had all day about Furber Steps has finally become a reality. There you will see and experience for yourself both utter exhaustion and total exhilaration in all its glory. Strangers encouraging each other "to just go one step further", and then another, and another, add (almost) infinitum.
+
+It's nice to see that this perceived determination is validated by in data. One can easily be unsure in the interpretation of events at this stage of the race. You're just hanging on. One suspects that the feel good moments are almost 'made up' by due to the complete tiredness. But by inspecting the data we can see how determined the **entire** field of finishers are once they hit the 91km mark.
+
+Nothing stops them.
+
+---
+
+## Checkpoints
+
+### Intro
+Checkpoints are a double edge sword. They have pratical and motivational properties yet possess all the attributes of an island getaway. Warmth, comfort, rest and all the food and drink you could ever pine for. If runners are fortunate enough to also have a crew awaiting their arrival then beware! Stay too long and your 'checkpoint time' swoops in to deliver the final blow: a DNF will be statistically more likely than a finish.
+
+_Darling you got to let me know  
+Should I stay or should I go?  
+If you say that you are mine  
+Let me know by checkpoint time_  
+
+Everyone should know about this [song][should_i_stay].
+
+### Watch out! You're heading towards a dropout
+
+Let's look at the 3 major checkpoints which contain data on arrival and departure times. Other checkpoints did not have this data so were unable to be used to answer the present inquiry.
+
+Box-plot of Dropout vs Finishers at each major checkpoint, segmented by sex.
+<img src="/assets/img/checkpoint_useage_box_plot.png">
+
+
+The box-plot clearly shows:
+
+- averages: solid black line inside each box  
+- 25% and 75% percentiles: bottom and top of boxes, respectively  
+- minimum/maximums: the extent of the 'handles' adjoining the box
+- outliers: the dots vertically above the handles of the box
+
+A Violin-plot reveals the same information but also shows the *distribution* of the values, something which the box-plot fails to do (all you get is a straight edged box).
+
+<img src="/assets/img/checkpoint_useage_violin_plot.png">
+
+
+> ASIDE:
+>At each checkpoint, the data that makes up runners who did not finish, is composed of 2 distinct behaviours:
+
+> 1. Runners who decided to drop **at** the checkpoint, and
+> 2. Runners that left the checkpoint but dropped **later on**, as indicated by having no finish line time.
+
+> It's important to be aware of how this data is derived when make inferences from the above box-plot. From the previous analysis on the number of runners dropping out at each checkpoint, we know that all runners who made it to the Sewage checkpoint successfully completed the event. And so, looking at the brown plot for the Queen Victoria Hospital (QVH) checkpoint (runners who didn't finish the race but made it to QVH), we interprit the QVH dropout data as describing the distribution of times taken for runners to come to grips that they were dropping out. Not that they dropped out after leaving QVH.
+
+
+
+**QVH**  
+Female runners who dropped out at QVH took an average of 57mins to do so, or 1.6 times longer than male runners, who took 35mins to decide to drop out.
+
+Successful female and male runners spent roughly the same time at QVH: 18mins.
+
+Comparing average times for successful/unsuccessful runners across the checkpoints, we see that QVH had the greatest difference. This may be attributed to unsuccessful runners taking longer to dropout, rather than successful runners spending much much less time, as compared to the other checkpoint stays. For male runners the difference between successful/unsuccessful runners was 17mins, whereas for females the difference was 39mins.
+
+QVH also has some unsuccessful runners spending 2+hrs before deciding to dropout.
+
+Of those that were unsuccessful, female runners took longer to quit. Dropping out so close to the finish line was clearly a tough decision to make. Kudos to all those who made it that far!
+
+**Katoomba Aquatic Centre**  
+For both male and female runners, the difference between successful/unsuccessful runners was about 10mins.
+
+**Six Foot Track**  
+For both male and female runners, the difference between successful/unsuccessful runners was about 5mins.
+
+
+**Overall**  
+Across all checkpoints, successful runners stayed less than unsuccessful runners.
+
+The averages of the time spent at each checkpoint can be used as a way to delineate which event is more likely to happen: finish or drop. 
+
+RULES
+1. If your stay is longer than the average for runners who finished, then you're more likely to drop.
+2. If you stay less than or equal to the average for runners who finished, then you're more likely to finish.
+
+Cavest 1: The true way of determining this is to compare the heights of each finish/dropout distribution for a given location and stay-time, but noone has the spare time to work this out whilst competing. We're only after a  general 'rule of thumb' here.
+
+Caveat 2: Looking at the above violin-plot shows that, to a good approximation, the distributions for male runners follow a unimodal distribution (aka "one hump on the camel's back"). Whereas the women distributions are multimodal (aka "two or more humps on the camel's back"). The following comparison applies better to unimodal distributions rather than multimodal ones, meaning that the women's guidelines for when they're more likely to drop are less accurate.
+
+Here are the average times spent at the three major checkpoints.
+
+| Checkpoint | Sex | Finished Race | Average Time Spent (mins) |
+|:-----------|:----|:--------------|:-----------|
+| Six Foot Track | F | No | 15 |
+| Six Foot Track | F | Yes | 11 |
+| Six Foot Track | M | No | 19 |
+| Six Foot Track | M | Yes | 11 |
+| Katoomba Aquatic Centre | F | No | 28 |
+| Katoomba Aquatic Centre | F | Yes | 18 |
+| Katoomba Aquatic Centre | M | No | 26 |
+| Katoomba Aquatic Centre | M | Yes | 16 |
+| QVH | F | No | 58 |
+| QVH | F | Yes | 18 |
+| QVH | M | No | 35 |
+| QVH | M | Yes | 18 |
+
+
+### Peak hour traffic. Arrival demand at checkpoints throughout the day.
+
+Throughout the day, in blocks of 10mins, how many runners arrive at the main checkpoints? We only consider the three main checkpoints from the previous section.
+
+
+By looking at the number of arrivals we can determine peak times, duration of said peak times, and the overall time that the a checkpoint is in use. This information will help organisers anticipate the surges in access, handling runner drop bag access, and staff checkpoints better.
+
+<img src="/assets/img/checkpoint_arrival_loads.png">
+
+Six Foot Track experienced the most intense load with ~55 runners arriving in a 10 minute period. Peak useage was seen to consistently diminsh the closer the checkpoint was to the finish line.
+
+This observation also applies to the gradient in arrival counts; load intensity *increased most sharply* at Six Foot Track, second most intense at Katoomba Aquatic Centre, then least intense at QVH.
+
+QVH has the longest operating hours with the first runner arriving at ~1pm and last at ~6am...17hours later! 
+
+---
+
+## Closing thoughts
+
+This concludes the first review of the UTA 100km 2019 event. Towards the end of this post we ventured into technical details that were a little too heavy for a 30,000ft view. Nonetheless, it was worth it because now we stand on somewhat better ground, a better springboard on which to jump off from and into the next year's event.
+
+The next post in the series concerns itself with looking at the interactions of runners throughout the course. When viewed in this light the abilities of the elite runners indeed come to the fore.
+
+---
+
+Other post in the UTA 100 series:
+
+<a href="{{ site.baseurl }}{% post_url 2019-07-02-UTA-100-Review-Pt-2 %}">UTA 100 Review Pt 2: Networks of runner interactions</a>
+
+<a href="{{ site.baseurl }}{% post_url 2019-07-03-UTA-100-Review-Pt-3 %}">UTA 100 Review Pt 3: Top 10 and how they train</a>
+
+
+---
+
+## Appendix
+
+### Calculating the weighted diff, W, column
+
+For a given start group, we calculate W for each age group, using the following quantities:
+
+1. Age group dropout %
+2. Age group size
+3. Difference between dropout % for the age group and start group 2 dropout %, at 12%.
+
+We want to see how much each age group is causing the its start group dropout % to be skewed away from being the lowest. Since start group 2 dropout % is the lowest for all start groups, we must consider all calculations relative to this point.
+
+In start group 1, W is calculated for each age group as follows:
+
+$$W = \Big(\frac{num\ of\ starters\ in\ age\ group}{num\ of\ runners\ in\ start\ group\ 1}\Big).(dropout_{ag}-dropout_{g2})$$
+
+where $$dropout_{ag}$$ is dropout % for an age group, and $$dropout_{g2}$$ is dropout % for start group 2.
+
+
+For example, let's take the 18-29W age group and group 1 dropout % = 16% (previously discussed). Then
+
+$$W = (\frac{4}{210}).(25 - 12) = +0.25 $$
+
+where $$ 210 $$ is the total number of runners in start group 1.
+
+$$\|W\|$$ measures the degree of influence the age group has, and the $$Sign(W)$$ relates to which direction the age group pulls the start group dropout % away from start group 2 dropout %. 
+
+
+
+
+[should_i_stay]: https://www.youtube.com/watch?v=BN1WwnEDWAM
+[good_ol_simpson]: https://en.wikipedia.org/wiki/Simpson%27s_paradox
+[the_goggins]: https://www.youtube.com/watch?v=DS0ed93UQeY
+[bruce]: https://www.youtube.com/watch?v=XTCnO5MXvoI
+[strava]: https://strava.com
+[livetrail-uta]: https://uta.livetrail.net/classement.php?course=UTA100&cat=scratch
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
