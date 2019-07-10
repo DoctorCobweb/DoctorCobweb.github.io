@@ -5,7 +5,17 @@ date:   2019-07-02 10:59:31 +1000
 categories: running 
 ---
 
-In this post we are concerned with visualizing the interactions of runners throughout the course. If a runner passes another runner, or is passed by another runner, then we consider this as an interaction. The runners crossed paths. Each checkpoint tracks the arrival time of any particular runner which can be used to construct a graph of interactions, between any 2 checkpoints.
+In this post we concern ourselves with visualizing the interactions of runners throughout the course. 
+
+<br/>
+<br/>
+<br/>
+<br/>
+### Graph algorithm design
+
+>Feel free to skip this section. It gets a little technical but is included for those who may be interested.
+
+If a runner passes another runner, or is passed by another runner, then we consider this as an interaction. The runners crossed paths. Each checkpoint tracks the arrival time of any particular runner which can be used to construct a graph of interactions, between any 2 checkpoints.
 
 For example, take two checkpoints, `A` and `B`, where `B` is further from the start line than `A`. For each runner, `i`,  calculate the following two sets:
 
@@ -14,8 +24,14 @@ For example, take two checkpoints, `A` and `B`, where `B` is further from the st
 
 The union of these two sets of runners constitutes the interactions of runner `i` between `A` and `B`. Do this for every runner who made it to checkpoint `B`, then create a graph where every runner is a node and every interaction between two runners is an edge. Furthermore, the color of a node is derived from the runner's start group, and the node size is proportional to the number of edges it has. In other words, a runner with more interactions has a bigger node.
 
-Now that the basic algorithm has been setup for generating a graph, let's move onto the visualizations.
+It should be noted that any intermediate interactions of runners between two checkpoints **cannot be captured**. For example, if runner 1 passed runner 2, but then runner 2 passed runner 1, between the checkpoints, then this would not show up as an interaction. The way to keep track of this type of behaviour would be to look at all adjacent intermediate checkpoint pairs (if possible), follow the two runners, and count every time one passed the other. We mention this because when graphing interactions for checkpoints that are very far apart, it's more likely that we'll miss these types of to-and-fro interactions. For example, if we used the 3km checkpoint as the first and Furber Steps Base as the second. 
 
+Nonetheless, the graphs provide a **lower bound** estimate of runner interactions.
+
+<br/>
+<br/>
+<br/>
+<br/>
 ### Snapshots in time
 
 Graphs were constructed for all adjacent checkpoints and inspected. Here we only include four graphs which represent pairs of checkpoints situated throughout the course:
@@ -52,66 +68,79 @@ Discussion
 <br/>
 <br/>
 <br/>
-## Casting a wide net: Every interaction enumerated
-### Traversing the graph.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IHEMSaKLELg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## Traversing the graph
+<iframe width="750" height="515" src="https://www.youtube.com/embed/IHEMSaKLELg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**3km to the Finish Line: Graph traversal**
 
 
 <br/>
 <br/>
 <br/>
 <br/>
-### Highly connected people
+## Highly connected people
 
-Runner 1317
 <img src="/assets/img/3km_to_finish_line_degree_rid_1317.png"/>
+**Runner 1317**
+<br/>
+<br/>
 
-Runner 183 
 <img src="/assets/img/3km_to_finish_line_degree_rid_183.png"/>
+**Runner 183**
+<br/>
+<br/>
 
-Runner 1376
 <img src="/assets/img/3km_to_finish_line_degree_rid_1376.png"/>
+**Runner 1376**
+<br/>
+<br/>
+<br/>
+<br/>
 
-### Sparse interactions
+## Sparse interactions
 
-#### Top 3 Males
+This section looks at the interaction graphs of the top 3 male and female runners from the 3km checkpoint to the finish line.
+
+
+We find that these runners have extremely small interaction graphs which means they don't pass and/or are passed by many other runners, as compared to the rest of the field. Once they're off, they're off.
+
+Comparitively speaking, the trail is congestion free so it would almost be like running a 100km time trial. Just consider that for a moment: ~10hrs of ultra-pace redlining through the Blue Mountains. Luckily the Blue Mountains are so beautiful. For these athletes, mental toughness is equal to, if not more important, to physical resilience.
+
+They run in a bubble, seem to enjoy the bubble, and the bubble rarely pops.
+
+
+### Top 3 Males
 <img src ="/assets/img/M_rid_2_zoomed.png"/>
+**1st Place - Marcin Swierc**
+<br/>
+<br/>
 
 <img src ="/assets/img/M_rid_3_zoomed.png"/>
+**2nd Place - Jonathan O'Loughlin**
+<br/>
+<br/>
 
 <img src ="/assets/img/M_rid_5_zoomed.png"/>
-
-<!--
-Runner 2 - Marcin Swierc
-<img src="/assets/img/3km_to_finish_line_degree_M_1st_rid_2.png"/>
-
-Runner 3 - Jonathan O'Loughlin
-<img src="/assets/img/3km_to_finish_line_degree_M_2nd_rid_3.png"/>
-
-Runner 5 - Morgan Lindqvist
-<img src="/assets/img/3km_to_finish_line_degree_M_3rd_rid_5.png"/>
--->
+**3rd Place - Morgan Lindqvist**
+<br/>
+<br/>
 
 
 
-
-#### Top 3 Females
+### Top 3 Females
 <img src ="/assets/img/F_rid_21_zoomed.png"/>
+**1st Place - Amy Lamprecht**
+<br/>
+<br/>
 
 <img src ="/assets/img/F_rid_27_zoomed.png"/>
+**2nd Place - Angélique Plaire**
+<br/>
+<br/>
 
 <img src ="/assets/img/F_rid_33_zoomed.png"/>
-
-<!--
-Runner 21 - Amy Lamprecht
-<img src="/assets/img/3km_to_finish_line_degree_W_1st_rid_21.png"/>
-
-Runner 33 - Angélique Plaire 
-<img src="/assets/img/3km_to_finish_line_degree_W_2nd_rid_33.png"/>
-
-Runner 27 - Emma Roca
-<img src="/assets/img/3km_to_finish_line_degree_W_3rd_rid_27.png"/>
--->
+**3rd Place - Emma Roca**
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -119,11 +148,16 @@ Runner 27 - Emma Roca
 <br/>
 ## Graph Inflation 
 
-3km to Narrow Neck 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/R4HqIYaW12E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+This section doesn't add anything new to the present discussion but is included purely for aesthetics. Part of creating graph visualizations is choosing how best to layout the nodes. Too dense and you can't see much, too dilute and it's hard to fit everything on the one screen. A common algorithm used to layout a graph is called the Fruchterman Reingold algorithm. Starting with all the nodes and edges overlapping each other, we apply this algorithm and record the 'inflation' process. Enjoy.
 
-Furber Base to Finish Line 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0X-AnZGJWDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="750" height="515" src="https://www.youtube.com/embed/BVpszIiT7-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**3km to Narrow Neck**
+
+<br/>
+<br/>
+
+<iframe width="750" height="515" src="https://www.youtube.com/embed/HhhiVtAFTKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Furber Base to Finish Line**
 
 
 <br/>
