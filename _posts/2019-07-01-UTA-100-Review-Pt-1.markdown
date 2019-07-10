@@ -377,9 +377,9 @@ The next post in the series concerns itself with looking at the interactions of 
 <br/>
 <br/>
 
-## Other post in the UTA 100 series
+## Other posts in the UTA 100 Series
 
-<a href="{{ site.baseurl }}{% post_url 2019-07-02-UTA-100-Review-Pt-2 %}">UTA 100 Review Pt 2: Networks of runner interactions</a>
+<a href="{{ site.baseurl }}{% post_url 2019-07-02-UTA-100-Review-Pt-2 %}">UTA 100 Review Pt 2: Runner Interactions</a>
 
 <a href="{{ site.baseurl }}{% post_url 2019-07-03-UTA-100-Review-Pt-3 %}">UTA 100 Review Pt 3: Top 10 and how they train</a>
 

@@ -1,47 +1,150 @@
 ---
 layout: post
-title:  "UTA 100 Review Pt 2: Networks of runner interactions."
+title:  "UTA 100 Review Pt 2: Runner Interactions"
 date:   2019-07-02 10:59:31 +1000
 categories: running 
 ---
 
+In this post we are concerned with visualizing the interactions of runners throughout the course. If a runner passes another runner, or is passed by another runner, then we consider this as an interaction. The runners crossed paths. Each checkpoint tracks the arrival time of any particular runner which can be used to construct a graph of interactions, between any 2 checkpoints.
 
+For example, take two checkpoints, `A` and `B`, where `B` is further from the start line than `A`. For each runner, `i`,  calculate the following two sets:
 
-## Casting a wide net: Every interaction enumerated
-### Traversing the full graph.
-### Highly connected people
+1. All the runners arriving at `A` before `i` that arrived at `B` after `i`. These are the runners that `i` passed between the two checkpoints.
+2. All the runners arriving at `A` after `i` that arrived at `B` before `i`. These are the runners that caught `i` between the two checkpoints.
 
-## Sparse rarefied interactions: The top of the top
+The union of these two sets of runners constitutes the interactions of runner `i` between `A` and `B`. Do this for every runner who made it to checkpoint `B`, then create a graph where every runner is a node and every interaction between two runners is an edge. Furthermore, the color of a node is derived from the runner's start group, and the node size is proportional to the number of edges it has. In other words, a runner with more interactions has a bigger node.
 
-## Checkpoint to checkpoint: Inflation and microstructures.
-### Inflation
-<img src="/assets/img/gephi_furber_base_to_finish_line_inflation.gif">
-
+Now that the basic algorithm has been setup for generating a graph, let's move onto the visualizations.
 
 ### Snapshots in time
 
-3km to Narrow Neck
+Graphs were constructed for all adjacent checkpoints and inspected. Here we only include four graphs which represent pairs of checkpoints situated throughout the course:
+
+1. 3km to Narrow Neck
+2. Dunphys to Ironpot
+3. Fairmont to Queen Victoria Hospital (QVH)
+4. Furber Base to the Finish Line
+
+
 <img src="/assets/img/gephi_3km_to_narrow_neck.png">
+**3km to Narrow Neck**
+<br/>
+<br/>
 
-Dunphys to Ironpot
 <img src="/assets/img/gephi_dunphys_to_ironpot.png">
+**Dunphys to Ironpot**
+<br/>
+<br/>
 
-Fairmont to Queen Victoria Hospital
 <img src="/assets/img/gephi_fairmont_to_qvh.png">
+**Fairmont to Queen Victoria Hospital**
+<br/>
+<br/>
 
-Furber base to Finish Line
 <img src="/assets/img/gephi_furber_base_to_finish_line.png">
+**Furber base to Finish Line**
+<br/>
+<br/>
+
+Discussion
+
+<br/>
+<br/>
+<br/>
+<br/>
+## Casting a wide net: Every interaction enumerated
+### Traversing the graph.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IHEMSaKLELg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+<br/>
+<br/>
+<br/>
+<br/>
+### Highly connected people
+
+Runner 1317
+<img src="/assets/img/3km_to_finish_line_degree_rid_1317.png"/>
+
+Runner 183 
+<img src="/assets/img/3km_to_finish_line_degree_rid_183.png"/>
+
+Runner 1376
+<img src="/assets/img/3km_to_finish_line_degree_rid_1376.png"/>
+
+### Sparse interactions
+
+#### Top 3 Males
+<img src ="/assets/img/M_rid_2_zoomed.png"/>
+
+<img src ="/assets/img/M_rid_3_zoomed.png"/>
+
+<img src ="/assets/img/M_rid_5_zoomed.png"/>
+
+<!--
+Runner 2 - Marcin Swierc
+<img src="/assets/img/3km_to_finish_line_degree_M_1st_rid_2.png"/>
+
+Runner 3 - Jonathan O'Loughlin
+<img src="/assets/img/3km_to_finish_line_degree_M_2nd_rid_3.png"/>
+
+Runner 5 - Morgan Lindqvist
+<img src="/assets/img/3km_to_finish_line_degree_M_3rd_rid_5.png"/>
+-->
+
+
+
+
+#### Top 3 Females
+<img src ="/assets/img/F_rid_21_zoomed.png"/>
+
+<img src ="/assets/img/F_rid_27_zoomed.png"/>
+
+<img src ="/assets/img/F_rid_33_zoomed.png"/>
+
+<!--
+Runner 21 - Amy Lamprecht
+<img src="/assets/img/3km_to_finish_line_degree_W_1st_rid_21.png"/>
+
+Runner 33 - Angélique Plaire 
+<img src="/assets/img/3km_to_finish_line_degree_W_2nd_rid_33.png"/>
+
+Runner 27 - Emma Roca
+<img src="/assets/img/3km_to_finish_line_degree_W_3rd_rid_27.png"/>
+-->
+
+<br/>
+<br/>
+<br/>
+<br/>
+## Graph Inflation 
+
+3km to Narrow Neck 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R4HqIYaW12E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Furber Base to Finish Line 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0X-AnZGJWDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
 ## Closing thoughts
 
 
---- 
-
+<br/>
+<br/>
+<br/>
+<br/>
+## Other posts in the UTA 100 Series
 <a href="{{ site.baseurl }}{% post_url 2019-07-01-UTA-100-Review-Pt-1 %}">UTA 100 Review Pt 1: DNFs, finish times, checkpoints</a>
 <a href="{{ site.baseurl }}{% post_url 2019-07-03-UTA-100-Review-Pt-3 %}">UTA 100 Review Pt 3: Top 10 and how they train</a>
 
----
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
