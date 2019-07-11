@@ -5,7 +5,13 @@ date:   2019-07-02 10:59:31 +1000
 categories: running 
 ---
 
-In this post we concern ourselves with visualizing the interactions of runners throughout the course. 
+In this post we concern ourselves with the caclulation and visualization of runner interactions throughout the course. When a runner passes or is passed by a runner, it is considered to be an interaction. At the human level an interaction comes in many forms. Sometimes it's a bit of a mumble, sometimes it's a conversation about how the training block leading up to UTA 100 went, or about how unreal the scenery is.
+
+But almost always there's some form of encouragement exchanged between the two. Both runners know exactly what they're getting themselves into.
+
+That's what makes running ultras so enjoyable.
+
+Reckless abandon. 
 
 <br/>
 <br/>
@@ -34,41 +40,78 @@ Nonetheless, the graphs provide a **lower bound** estimate of runner interaction
 <br/>
 ### Snapshots in time
 
-Graphs were constructed for all adjacent checkpoints and inspected. Here we only include four graphs which represent pairs of checkpoints situated throughout the course:
+Graphs were constructed for all adjacent checkpoints and inspected. The following sample of graphs was chosen because each graph is geographically isolated from rest of the graphs in the sample, whilst the collection of graphs constituted reasonable coverage of the entire course.
 
 1. 3km to Narrow Neck
 2. Dunphys to Ironpot
 3. Fairmont to Queen Victoria Hospital (QVH)
 4. Furber Base to the Finish Line
 
+The size of a node (runner) is a reflection of how many interactions a runner had. The bigger, the more interactions. Start groups are designated a color as shown in the graph. Have a scroll through and observe the change in runner interaction behaviour as we move closer to the finish line. 
 
 <img src="/assets/img/gephi_3km_to_narrow_neck.png">
 **3km to Narrow Neck**
 <br/>
 <br/>
+At the beginning of the race there is not much mixing of start groups. Between the 3km and Narrow Neck checkpoints, start group 1 and 2 are almost isolated from the rest of the field; there are not many edges connecting start groups 1 and 2 to the rest of the field. They've formed a rather large cohort. It should be noted that there are indeed a few red edges connecting runners in start group 2 and 3, which means a few group 3 runners caught group 2 before getting to Narrow Neck. Also, within group 1 and 2 there looks to be some mixing.
+
+Even at this stage the top runners in group 1 have emerged; there is a small number of runners with low connectivity to the rest of group 1, located at roughly 12 o'clock in the above graph. At this stage we assume the field is still highly compressed on so many interactions are probable. The conclusion that the low connectivity group 1 runners are indeed the lead runners, and not some other further-back runners who just so happen to have not had many interactions, is the favoured hypothesis at this stage. 
+
+Groups 3 to 7 display mixing but only between *adjacent* groups. For example, runners in group 4 have interacted with group 3 and 5 runners only, but not interacted with runners from non-adjacent groups 1/2/6/7. There simply hasn't been enough time and ground covered to get large amounts of mixing between all groups.
+
 
 <img src="/assets/img/gephi_dunphys_to_ironpot.png">
 **Dunphys to Ironpot**
 <br/>
 <br/>
+Here we see the emergence of a select number of runners who interacted much more than the average runner. There are 2 very large nodes present: a runner in group 3, and a runner in group 7.
+
+It's hard to see but around the circumference there are a few *single* green dots. These are group 1 runners who had no interactions between Dunphys and Ironpot checkpoints.
+
+Overall, group 1 still displays the least amount of mixing as compared to all other groups, whereas groups 4/5/6/7 have large amounts of mixing.
 
 <img src="/assets/img/gephi_fairmont_to_qvh.png">
 **Fairmont to Queen Victoria Hospital**
 <br/>
 <br/>
 
+There is a singular highly-connected runner in group 7. The rest of the field looks to have consistent mixing. Non-adjacent start groups are interacting.
+
+There is still the presence of group 1 runners with no interactions, located around the circumference. And group 1 looks to have the least amount of mixing overall, as previously discussed for Dunphys to Ironpot.
+
+At the 11 o'clock position, there are ~10 group 1 runners who have split off from the main graph. One suspects this is a cohort of runners geographically isolated from the rest of the group 1 runners. These runners are in a 'pack'. We use apostrophies here because it may well not be a pack in the sense of a very densely packed number of runners, but compared to the rest of the field, these runners have only interacted within their small group, and for this reason we believe the use of the term 'pack' is somewhat valid. It's a nice thought though. A pack of runners, this far into the race, working together to boost each other's performance.
+
+Perhaps even working together to hunt down far-off runners who fancy their chances, unbeknownst to the steam train rolling down the trails, fastly aprroaching from behind.
+
+Toot toot.
+
 <img src="/assets/img/gephi_furber_base_to_finish_line.png">
 **Furber base to Finish Line**
 <br/>
 <br/>
 
-Discussion
+Wow. What an interesting graph. It looks completely different to the others. Why?
+
+First of all, there are less nodes contained in this graph than for the others. Less runners reached the base of Furber Steps as compared to, say, Narrow Neck checkpoint. Secondly, there is no longer one large graph of connected runners. Instead there a many, many smaller graphs. And for each smaller graph there are many connections between the runners making up the small group, suggesting runners ascended Furber Steps together in small groups.
+
+At this stage of the race you're just holding on. Literally and figuratively. You're pulling yourself up the steps using the handrails. Perhaps the shared suffering between runners is an emergent property that provides the necessary boost in adreneline. Or perhaps there's no adreneline left at this stage and every runner's `autopilot` system has been engaged, whereby the autopilot behaviour is to naturally clump runners together.
+
+From the logistical point of view, there's not much of an opportunity to pass another runner on Furber Steps. Though it should be noted even at this stage people are polite, and offer to let someone stronger pass. This far in, passing doesn't really seem to matter for most of the field. Yes if you're chasing a spot on the podium then for sure, passing would seem warranted, almost necessary.
+
+But try to take it all in. Take the time to come to terms with your accomplishment.
+
+Try to enjoy the process because soon it's going to be all over for another year.
+
+
+
 
 <br/>
 <br/>
 <br/>
 <br/>
 ## Traversing the graph
+
+The video below aims to help build your intuition for how densely connected the graph for 3km to the Finish Line is. When hovering the mouse over any particular node, all of its connections will be highlighted. Note how sparsely connected the (green) group 1 runners are compared to the rest of the field. Likewise for the back of the field, located at the other extremity of the graph.
 <iframe width="750" height="515" src="https://www.youtube.com/embed/IHEMSaKLELg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 **3km to the Finish Line: Graph traversal**
 
@@ -79,18 +122,19 @@ Discussion
 <br/>
 ## Highly connected people
 
+From the previous graph traversal we saw a few runners who were highly connected. Here we provide a snapshot of said runners to see in better detail the extent of their connections, and to whom.
+
+The inference is left as an exercise for the reader.
+
 <img src="/assets/img/3km_to_finish_line_degree_rid_1317.png"/>
-**Runner 1317**
 <br/>
 <br/>
 
 <img src="/assets/img/3km_to_finish_line_degree_rid_183.png"/>
-**Runner 183**
 <br/>
 <br/>
 
 <img src="/assets/img/3km_to_finish_line_degree_rid_1376.png"/>
-**Runner 1376**
 <br/>
 <br/>
 <br/>
@@ -142,13 +186,31 @@ They run in a bubble, seem to enjoy the bubble, and the bubble rarely pops.
 <br/>
 <br/>
 
+The top 3 men have far sparser interactions than the top 3 women.
+
+Marcin Swierc barely ran with anyone all day. 2nd and 3rd place men had roughly the same amount of interaction, Jonathan O'Loughlin and Morgan Lindqvist respectively.
+
+Similarly for the top 3 women. Amy Lamprecht had much less interaction than compared to the 2nd and 3rd womenplace women, Angélique Plair and Emma Roca respectively.
+
+Let's look into the distribution of runner interactions for the graph.
+
+<img src ="/assets/img/gephi_3km_to_finish_line_ave_degree_report_screenshot.png"/>
+
+**Degree distribution for runner interactions from the 3km checkpoint to the finish line**
+
+The average degree, aka average num of interactions is ~150 people. The top 3 male runners had ~50x less than the average, and the top 3 women had ~10-15 times less. At the tail end of the distribtion is someone who had almost 700 interactions, at the very least.
+
 <br/>
 <br/>
 <br/>
 <br/>
 ## Graph Inflation 
 
-This section doesn't add anything new to the present discussion but is included purely for aesthetics. Part of creating graph visualizations is choosing how best to layout the nodes. Too dense and you can't see much, too dilute and it's hard to fit everything on the one screen. A common algorithm used to layout a graph is called the Fruchterman Reingold algorithm. Starting with all the nodes and edges overlapping each other, we apply this algorithm and record the 'inflation' process. Enjoy.
+This section doesn't add anything new to the present discussion but is included purely for aesthetics. Part of creating graph visualizations is choosing how best to layout the nodes. Too dense and you can't see much, too dilute and it's hard to fit everything on the one screen. A common algorithm used is called the Fruchterman Reingold algorithm. Starting with all the nodes and edges overlapping each other, we apply this algorithm and record the 'inflation' process. 
+
+<!-- The one thing to note is how the degree of connectedness slows down the expansion of the graph. More computations are required.-->
+
+Enjoy.
 
 <iframe width="750" height="515" src="https://www.youtube.com/embed/BVpszIiT7-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 **3km to Narrow Neck**
@@ -166,13 +228,16 @@ This section doesn't add anything new to the present discussion but is included 
 <br/>
 ## Closing thoughts
 
+Graphs were created for every runner between each checkpoint and qualitative analysis was undertaken. We saw how sparsely connected the front runners were compared to the rest of the field, how different stages of the race displayed different amounts and types of start group mixing, and how Furber Steps dramatically alters the runner experience. For the better.
 
+Next up in [Part 3][part-3] we take a deep dive into understanding the training of the top 10 performers with the hope of learning something for ourselves.
 <br/>
 <br/>
 <br/>
 <br/>
 ## Other posts in the UTA 100 Series
 <a href="{{ site.baseurl }}{% post_url 2019-07-01-UTA-100-Review-Pt-1 %}">UTA 100 Review Pt 1: DNFs, finish times, checkpoints</a>
+<br/>
 <a href="{{ site.baseurl }}{% post_url 2019-07-03-UTA-100-Review-Pt-3 %}">UTA 100 Review Pt 3: Top 10 and how they train</a>
 
 <br/>
@@ -180,26 +245,4 @@ This section doesn't add anything new to the present discussion but is included 
 <br/>
 <br/>
 
-
-
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[strava]: https://strava.com
-[livetrail-uta]: https://uta.livetrail.net/classement.php?course=UTA100&cat=scratch
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[part-3]: {% post_url 2019-07-03-UTA-100-Review-Pt-3 %}

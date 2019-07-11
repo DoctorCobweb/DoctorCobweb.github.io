@@ -370,7 +370,7 @@ QVH has the longest operating hours with the first runner arriving at ~1pm and l
 
 This concludes the first review of the UTA 100km 2019 event. Towards the end of this post we ventured into technical details that were a little too heavy for a 30,000ft view. Nonetheless, it was worth it because now we stand on somewhat better ground, a better springboard on which to jump off from and into the next year's event.
 
-The next post in the series concerns itself with looking at the interactions of runners throughout the course. When viewed in this light the abilities of the elite runners indeed come to the fore.
+The next post in the series, [Part 2][part-2] concerns itself with looking at the interactions of runners throughout the course. When viewed in this light the abilities of the elite runners indeed come to the fore.
 
 <br/>
 <br/>
@@ -380,13 +380,14 @@ The next post in the series concerns itself with looking at the interactions of 
 ## Other posts in the UTA 100 Series
 
 <a href="{{ site.baseurl }}{% post_url 2019-07-02-UTA-100-Review-Pt-2 %}">UTA 100 Review Pt 2: Runner Interactions</a>
-
+<br/>
 <a href="{{ site.baseurl }}{% post_url 2019-07-03-UTA-100-Review-Pt-3 %}">UTA 100 Review Pt 3: Top 10 and how they train</a>
 
 <br/>
 <br/>
 <br/>
 <br/>
+
 
 ## Appendix
 
@@ -418,6 +419,7 @@ $$\|W\|$$ measures the degree of influence the age group has, and the $$Sign(W)$
 
 
 
+[part-2]: {% post_url 2019-07-02-UTA-100-Review-Pt-2 %}
 [should_i_stay]: https://www.youtube.com/watch?v=BN1WwnEDWAM
 [good_ol_simpson]: https://en.wikipedia.org/wiki/Simpson%27s_paradox
 [the_goggins]: https://www.youtube.com/watch?v=DS0ed93UQeY
