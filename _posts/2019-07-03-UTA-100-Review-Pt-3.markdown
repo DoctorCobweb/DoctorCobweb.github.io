@@ -52,13 +52,13 @@ Occasional flat long runs was a trait commonly observed across the top 10 athlet
 
 ---
 <br/>
-**Marcin Swierc - 1st**
+**Marcin Swierc - 1st - 09:31:15**
 
 Marcin does have a Strava profile but appears to not upload frequently, thus rendering a formal analysis of his training impossible. It would have been nice to see considering is the 2018 TDS champion. Some basic research and YouTube-ing reveals he basically wins almost everything he enters. Truly a world class athlete.
 
 ---
 <br/>
-**Jonathan O'Loughlin - 2nd**
+**Jonathan O'Loughlin - 2nd - 09:42:28**
 <img src="/assets/img/jonathan_oloughlan_training.png">
 
 Jonathan trained the least amount out of all top 10 runners (assuming his Strava profile is complete). This was quite suprising. How could someone train so little, relatively speaking, yet blaze across the line in 2nd place at one of the most competitive ultra trail races in Australia?
@@ -69,7 +69,7 @@ He is one of only four runners to have completed *every* UTA. That's every race 
 
 ---
 <br/>
-**Morgan Lindqvist - 3rd**
+**Morgan Lindqvist - 3rd - 09:43:45**
 <img src="/assets/img/morgan_lindqvist_training.png">
 
 Morgan consistently had a weekly mean distance of 100km to 150km, with dips below 100km only due to having a race. This suggests Morgan was able to stay injury free over the last 10 months. The highest weekly mean distance was a little over 150km before tapering for the Mt Solitary 43km race in Arpil. Following Mt Solitary it only took one week of rest before training volume bounced sharply back to pre race values. 
@@ -85,54 +85,87 @@ We also see the presence of shorter 10km races.
 
 ---
 <br/>
-**Justin Whitley - 4th**
+**Justin Whitley - 4th - 09:56:18**
 <img src="/assets/img/justin_whitley_training.png">
+
 
 Justin utilized swimming and riding the most out of the top 10.
 
-The 2nd half of 2018 saw practically no running at all. Instead there was loads of road and mountain bike riding. Rides consistently had at least 500m of vertical gain, peaking at a single week having 400kms with ~12500m of vertical ascent due to partaking in the Pioneer MTB Race in New Zealand. That's incredible. Riding predominantly builds strength in the major muscle groups (quads, calves etc), as opposed to the smaller, stabalizer-like muscles commonly associated with running on trails. Trail running still needs raw base-level strength coming from the major muscle groups and riding provides another avenue towards achieving this, albeit with reduced risk of injury due to the zero impact nature of riding. It seems like this principle is manifest here.
+The 2nd half of 2018 saw practically no running at all. Instead there was loads of road and mountain bike riding. Rides consistently had at least 500m of vertical gain, peaking at a single week having 400kms with ~12,500m of vertical ascent due to competing in the Pioneer MTB Race in New Zealand. Riding predominantly builds strength in the major muscle groups (quads, calves etc), as opposed to the smaller, stabalizer-like muscles commonly associated with running on trails. Trail running still needs raw base-level strength coming from the major muscle groups and riding provides another avenue towards achieving this, albeit with reduced risk of injury due to riding being zero impact.
 
-Swimming increases concurrently with running volume. This suggests that swimming is being used as a form of active recovery in exchange for running more and riding less. Since there's some amount of overlap with respect to running and riding, reducing one when the other increases seems like a logical thing to do. 
+Swimming increased concurrently with running volume. This suggests that swimming is being used as a form of active recovery in exchange for running more and riding less. Running and riding share some similarities when it comes to which muscle groups are employed during activity and so reducing one when the other increases seems like a logical thing to do. 
 
-Justin had a consistent build in running volume starting in January. The only other athlete to display this type of consitent build was Jonathan O'Loughlin. All other runners had peaks and troughs characteristic of distinct training blocks. Nearing UTA, the intensity of training really ramped up with Justin participating in 3 trail events within a space of 4-8 weeks. One event saw Justin compete in a 22km trail event then turn back and run back to the start line. These types of long runs at intensity not only benefit the physical side but also the mental. Turning back to 'do it all again' requires a certain amount of mental resilience, crucial for the longer events like UTA 100km.
+Starting from January, Justin had a consistent build in running volume with little, to no, drop in volume. Nearing UTA, the intensity of training really ramped up with Justin participating in 3 trail events within a space of 4-8 weeks. One event saw Justin compete in a 22km trail event, then turn around and run back to the start line. These types of long runs at intensity not only benefit a runner's physical state but also their mental fortitude, crucial for longer events like UTA 100km.
 
+Justin trained smart and consistently. There appeared to be no signs of injury during the build up, testament to the cross training/ active recovery methodology. 
 
 
 ---
 <br/>
-**Mike Carroll - 5th**
+**Mike Carroll - 5th - 10:19:00**
 <img src="/assets/img/mike_carroll_training.png">
 
-TODO
+Mike had a weekly mean running distance of 100km to 150km, for the 7 months preceding UTA. There didn't appear to be any form of cross training uploaded to Strava, and there were distinct training blocks observed. Events participated in were mainly of the marathon-like distances, except for one all-nighter event where distance topped out at 63km.
+
+Towards the peak of UTA training back to back long runs were used, with the second one less than the first. Treadmill sessions were common, as also was Parkrun as a speed session. In addition to just doing a Parkrun, some of his long runs *contained* a Parkrun. Workouts were also common, sometimes outside, sometimes on the treadmill. Mike probably used the treadmill the most out of all top 10 runners. Treadmills offer an efficient and effective use of one's time. They are also `controlled` sessions, where once the pace is set it forces the runner to hold it.
+
 
 ---
 <br/>
-**Scott Richmond - 6th**
+**Scott Richmond - 6th - 10:26:09**
 <img src="/assets/img/scott_richmond_training.png">
 
-TODO
+Scott had a weekly mean running distance of 30km to 100km across the 10 months preceding UTA. Races during this period were more of the ultra-type distance, with the Surf Coast Century 100km featuring in September 2018. Swimming was a popular method of cross training and riding feature also, but to a lesser extent. During most of the 'build' phases in running volume, swimming volume also increased. This suggests that swimming was used as a form of active recovery.
+
+Mean weekly running distance was on the lower side when compared to the rest of the top 10, but this may be due to Scott spending a little extra time recovering from ultra-length races. The sustained loading and effort that comes from racing ultras needs to be respected, taking a little extra time to get back into proper training is probably a good idea. Avoiding a career ending injury is the ultimate goal.
+
+Scott commonly did speed sessions, tempos, and recovery hikes.
+
 
 ---
 <br/>
-**Matt Crehan - 7th**
+**Matt Crehan - 7th - 10:33:25**
 <img src="/assets/img/matt_crehan_training.png">
 
+Consistency.
+
+Although Matt raced frequently in ultra-length events, he managed to have a much flatter weekly mean running distance between 50km and 110km. This means he was able to recover quicker whilst not overtraining. That's an important point to make. There seems to be a balance struck between high intensity racing, recovery, and the build up of fatigue. Noteworthy races were the Alpine Challenge 100 miler (modified course with less vertical gain due to snow conditions), Cradle Mountain 80km, and the Razor Back 64km.
+
+Matt ran in the Surf Coast Century 100km in September, then the 100miler Alpine Challenge in November. A testament to the consistency in his training and methods of recovery.
+
+Swimming was a very popular form of cross training and active recovery. Matt was the most consistent swimmer, in terms of days per week and volume, out of all the top 10 runners. Even right up to UTA.
+
+We're beginning to see a trend here with swimming and high performance running...
+
+Matt ran tempos, long hill sessions both long (double repeat of a 1150m peak) and short, and sometimes there were flat long runs instead of one containing decent amounts of vertical gain. Easy general aerobic runs were 7-13km and easy walks/hikes after an intense week were common.
+
+
 ---
 <br/>
-**Peter Wilson - 8th**
+**Peter Wilson - 8th - 10:34:18**
 
 No data found.
 
 ---
 <br/>
-**Brendan Davies - 9th**
+**Brendan Davies - 9th - 10:45:38**
 <img src="/assets/img/brendan_davies_training.png">
 
-TODO
+Brendan is a high output, high performance professional athlete and coach. He won the 2018 UTA 100km with a time of 09:18:10 setting a new course record that would've beaten this year's winner, Marcin Swierc, who ran 09:31:15.
+
+Brendan consistently had the highest mean weekly running distance out of the top 10. For the last 10 months it ranged from 100km to 240km . He also ran the longest single run, 227km at the Adelaide 24hr race, and represented Australia in the IAU 100km World Championships being the first Australian to cross the line. Bendan raced the most out of the top 10, at all distances ranging from 5km Parkruns to 100km and beyond.
+
+Interestingly there was no recorded form of cross training. Brendan is able to handle high weekly loads and not sustain a major injury. Strava contains training data going back to 2008 which suggests that it takes many years of consistent running to get to this level. There are no shortcuts.
+
+
+Being a professional coach requires holding a lot of group training sessions. Sometimes there were 4-5 sessions per day, each of which contained running. This contributes largely to the high weekly volume. Medium long runs during the week were ~20km, speed sessions (interval repetitions or tempos), and long runs (flat or hilly) were all common throughout the data.
+
+
+
 
 ---
 <br/>
-**Anthony Boyle - 10th**
+**Anthony Boyle - 10th - 10:58:42**
 <img src="/assets/img/anthony_boyle_training.png">
 
 TODO
