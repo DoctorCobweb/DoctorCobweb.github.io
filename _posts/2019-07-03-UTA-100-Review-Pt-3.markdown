@@ -5,158 +5,201 @@ date:   2019-07-03 10:59:31 +1000
 categories: running 
 ---
 
-## Motivation 
-TODO
+INTRO TODO
 
+
+<br/>
+<br/>
+<br/>
+<br/>
 ## Individual training approaches
 
 Vlad Shatrov
 <img src="/assets/img/vlad_shatrov_training.png">
 
+TODO
 
 Jonathan O'Loughlin
 <img src="/assets/img/jonathan_oloughlan_training.png">
 
+TODO
+
 Morgan Lindqvist
 <img src="/assets/img/morgan_lindqvist_training.png">
+
+TODO
 
 Justin Whitley
 <img src="/assets/img/justin_whitley_training.png">
 
+TODO
+
 Mike Carroll
 <img src="/assets/img/mike_carroll_training.png">
+
+TODO
 
 Scott Richmond
 <img src="/assets/img/scott_richmond_training.png">
 
+TODO
+
 Matt Crehan
 <img src="/assets/img/matt_crehan_training.png">
+
+TODO
 
 Brendan Davies
 <img src="/assets/img/brendan_davies_training.png">
 
+TODO
+
 Anthony Boyle
 <img src="/assets/img/anthony_boyle_training.png">
 
+TODO
 
+
+<br/>
+<br/>
+<br/>
+<br/>
 ## Training time series
-by using a rolling mean with a wide window (ie. use many consecutive weeks to calculate a mean for a particular date), we can filter our short-term trends in the training data. this has the consequence of better reflecting long-term training loads and better reflects the saying that "training is not about a single session, but rather about stringing many sessions into weeks, weeks into months, months into years etc". loading the body in a consistent fashion is how one builds a strong aerobic base, and by *gradually* loading, one can avoid acute injuries commonly seen in overly eager, inpatient individuals.
+By using a rolling mean with a wide window (ie. use many consecutive weeks to calculate a mean for a particular date), we can filter our short-term trends in the training data. This has the consequence of better reflecting long-term training loads and better reflects the saying that `training is not about a single session, but rather about stringing many sessions into weeks, weeks into months, months into years`. Loading the body in a consistent fashion is how one builds a strong aerobic base, and by *gradually* loading, one can avoid acute injuries commonly seen in overly eager, inpatient individuals.
 
-one would expect that the top 10 performers at uta 100 know this and implement training cycles to reflect such wisdom. by widening the window for rolling-mean calculations, general long-term trends can be investigated. typically, a training block can range from 8-20 weeks. so as a rule of thumb, we will only go to an 8 week wide window, otherwise we run the risk of 'blurring' out an 8 week training cycle.
+One would expect that the top 10 performers at uta 100 know this and implement training cycles to reflect such wisdom. By widening the window for rolling-mean calculations, general long-term trends can be investigated. Typically, a training block can range from 8-20 weeks. So as a rule of thumb, we will only go to an 8 week wide window, otherwise we run the risk of 'blurring' out an 8 week training cycle.
 
 
-cross-training is also rather common. half the athletes use either swimming, riding, or both. swimming is the most popular amoungst the top 10, and is used as a form of zero-impact active recovery. in contrast to using riding as cross training, swimming offers the athlete a way to build their core stregth at the same time, and is crucial especially for ultra trail athletes.
+Cross-training is also rather common. Half the athletes use either swimming, riding, or both. Swimming is the most popular amoungst the top 10, and is used as a form of zero-impact active recovery. In contrast to using riding as cross training, swimming offers the athlete a way to build their core stregth at the same time, and is crucial especially for ultra trail athletes.
 
+<br/>
+<br/>
+<br/>
+<br/>
 ## Weekly distance
 <img src="/assets/img/weekly_distance_rolling_average.png">
 
-**Observations**  
-1. vlad shatrov, brendan davies, and morgan lindqvist have the top 3 rolling-mean weekly running distance. vlad was winning the race until 60km, having to stop due to injury. morgan came third, and brendan is the 2018 winner of uta 100. it seems that consistently high training volume seems to pay off. but with higher training volume comes more risk of injury. over the span of the last 10 months of training data obtained there was little long term injuries sustained by these individuals. they have learnt how to train, address injuries (if any) properly and early before they lead to month-long training hiatuses.
+Vlad Shatrov, Brendan Davies, and Morgan Lindqvist have the top 3 rolling-mean weekly running distance. Vlad was winning the race until 60km, having to stop due to injury. Morgan came third, and Brendan is the 2018 winner of UTA 100. It seems that consistently high training volume seems to pay off. But with higher training volume comes more risk of injury. over the span of the last 10 months of training data obtained there was little long term injuries sustained by these individuals. they have learnt how to train, address injuries (if any) properly and early before they lead to month-long training hiatuses.
 
-2. justin whitley had the greatest ramp up in running training. he used swimming as a means to balance the loading and it seems to have payed off with a great result, 4th place. justin entered quite a few races close to the uta 100 event, performed well across the lot of them, and remained injury free. well done.
+Justin Whitley had the greatest ramp up in running training. He used swimming as a means to balance the loading and it seems to have payed off with a great result, 4th place. Justin entered quite a few races close to the UTA 100 event, performed well across the lot of them, and remained injury free.
 
-3. the most consistent runner amoungst the top 10 was matt crehan; his running weekly rolling-mean line was the flatest out of the lot. naively one would expect that it was the result of not racing much (having no 'down, recovery weeks'), but he was the 2nd most frequent racer,second to brendan davies. matt was able race and train without little dipping in overall running training. similarly to justin whitley, matt swam alot. often 2-4 sessions per week. but this is only one factor contributing to having such a successful training period. one needs to also look into weekly long runs, speed sessions, sequencing of runs withing a week etc. before narrowing down on a conclusion. for now we will just note down that swimming again appears in another successful training block.
+The most consistent runner amoungst the top 10 was Matt Crehan; his running weekly rolling-mean line was the flatest out of the lot. Naively one would expect that it was the result of not racing much (having no 'down, recovery weeks'), but he was the 2nd most frequent racer, second to Brendan Davies. Matt was able race and train without little dipping in overall running training. Similarly to Justin Whitley, Matt swam alot. Often 2-4 sessions per week. But this is only one factor contributing to having such a successful training period. One needs to also look into weekly long runs, speed sessions, sequencing of runs withing a week etc. Before narrowing down on a conclusion for now we will just note down that swimming again appears in another successful training block.
 
-4. jonathan o'loughlin's training stands out as being the most unusual. it's the lowest during the last ~4months yet he came 2nd. perhaps some of the training sessions were not uploaded to strava. but should that not be the case then his peformance, based purely upon inspecting athlete's training blocks over 10months, is truly amazing. it would be great to know more about his lead up. he didn't cross train (apart from some indoor bike sessions ~8months ago), and didn't race at all in the lead, in contrast to nearly all top 10 athletes. he did however do his long runs on the actual uta 100 course and was, again the only one, to do intense step training sessions. uta has a lot of stairs both up and down. jonathan's training was specific, yet minimal. jonathan is one of only four runner's to have completed *every* uta 100 since the event began in 2008. his knowledge of the course and experience must have played a significant role in efficiently training and competing on the day. what this says is that jonathan is a talented runner who has been running ultras for at least 11 years, and who knows exactly how to approach the course. with the possible addition of a little luck on the day we can see how unique of a runner jonathan is and how unique his performance was this year. great job.
+Jonathan O'Loughlin's training stands out as being the most unusual. It's the lowest during the last ~4months yet he came 2nd. Perhaps some of the training sessions were not uploaded to Strava. But should that not be the case then his peformance, based purely upon inspecting athlete's training blocks over 10months, is truly amazing. It would be great to know more about his lead up. He didn't cross train (apart from some indoor bike sessions ~8months ago), and didn't race at all in the lead, in contrast to nearly all top 10 athletes. He did however do his long runs on the actual uta 100 course and was, again the only one, to do intense step training sessions. UTA has a lot of stairs both up and down. Jonathan's training was specific, yet minimal. Honathan is one of only four runner's to have completed *every* uta 100 since the event began in 2008. His knowledge of the course and experience must have played a significant role in efficiently training and competing on the day. What this says is that Jonathan is a talented runner who has been running ultras for at least 11 years, and who knows exactly how to approach the course. With the possible addition of a little luck on the day we can see how unique of a runner Jonathan is and how unique his performance was this year.
 
-six foot track is a popular race amoungst the top 10. 5 of the runners competed this year and placed well. as is mt solitary ultra. both these races are in the blue mountains which must add to the 'local knowledge' used by the runners to perform well in the uta 100 event.
+Six Foot Track is a popular race amoungst the top 10. 5 of the runners competed this year and placed well. As is mt Solitary ultra. Both these races are in the Blue Mountains which must add to the 'local knowledge' used by the runners to perform well in the UTA 100 event.
 
+<br/>
+<br/>
+<br/>
+<br/>
 ## Weekly vertical ascent
 <img src="/assets/img/weekly_ascent_rolling_average.png">
 
-nearing race day, the 3 highest average weekly ascent performers were mike carroll, brendan davies, and justin whitley. right before uta 100 they were averaging (over the last 8 weeks), 3-4k of vertical ascent per week. the rest of the top 10 had 1.5-2.5k vertical gain average (over the last 8 weeks).
+Nearing race day, the 3 highest average weekly ascent performers were Mike Carroll, Brendan Davies, and Justin Whitley. Right before UTA 100 they were averaging (over the last 8 weeks), 3-4k of vertical ascent per week. The rest of the top 10 had 1.5-2.5k vertical gain average (over the last 8 weeks).
 
-again, justin whitley and jonathan o'loughlin had the steepest increase in weekly average vertical ascent. based on overall training volume, one may have expected vlad shatrov to have a weekly average vertical ascent closer to the 3 highest in the graph above. but this wasn't the case. he did compete in six foot in march, and we see that there was a drop in average weekly ascent closer to the start of april. but vlad still maintained a large volume of running so it meant more flat running, on average. perhaps he was dealing with the injury that would lead to his DNF at uta 100, but without further information one can only speculate.
+Again, Justin Whitley and Jonathan O'Loughlin had the steepest increase in weekly average vertical ascent. Based on overall training volume, one may have expected Vlad Shatrov to have a weekly average vertical ascent closer to the 3 highest in the graph above. But this wasn't the case. He did compete in Six Foot Track in March, and we see that there was a drop in average weekly ascent closer to the start of April. But Vlad still maintained a large volume of running so it meant more flat running, on average. Perhaps he was dealing with the injury that would lead to his DNF at UTA 100, but without further information one can only speculate.
 
-## The.Long.Run 
+<br/>
+<br/>
+<br/>
+<br/>
+## The.Weekly.Long.Run 
+
+TODO
 
 ### Long run distance
 <img src="/assets/img/weekly_long_run_distance_rolling_average.png">
 
-**Observations**  
 
-from febuary 2019 to race day we see that, the rolling average for weekly long run distance for 8 out of 10 runners almost converge. in other words, these 8 runners are running roughly the same distance for their long run. looking at april 2019 we see that most of the graph lines have a value between 30-40km. and because we are using a rolling mean with a window of 8 weeks this means that *at the start of april, most runners for the past 8 weeks have been running their long runs between 30km to 40km*.
+From Febuary 2019 to race day we see that, the rolling average for weekly long run distance for 8 out of 10 runners almost converge. In other words, these 8 runners are running roughly the same distance for their long run. Looking at April 2019 we see that most of the graph lines have a value between 30-40km. And because we are using a rolling mean with a window of 8 weeks this means that *at the start of April, most runners for the past 8 weeks have been running their long runs between 30km to 40km*.
 
-the outliers for this period are jonathan o'loughlin and justin whitley. they dramatically ramp up their long run distances towards uta 100 as compared to the other top 10.
+The outliers for this period are Jonathan O'Loughlin and Justin Whitley. They dramatically ramp up their long run distances towards UTA 100 as compared to the other top 10.
 
-looking back at the weekly running distances graph we note something interesting: whilst average weekly distances between runners vary a lot, average weekly long run distances don't. average long run distance seems to be roughly the same for 8 out of the top ten runners. and so the differences in average weekly distance must be attributed to other types of running sessions, eg. general aerobic, speed/hill/tempo sessions etc.
+Looking back at the weekly running distances graph we note something interesting: whilst average weekly distances between runners vary a lot, average weekly long run distances don't. Average long run distance seems to be roughly the same for 8 out of the top ten runners. And so the differences in average weekly distance must be attributed to other types of running sessions, eg. general aerobic, speed/hill/tempo sessions etc.
 
 ### Long run vertical ascent
-Barplot
 <img src="/assets/img/long_run_vertical_ascent_barplot.png">
-**Observations**  
-the most common amount of vertical ascent for the weekly longest run is 1000-1500m, followed by 0-500. a run must be at least 30km in distance to be considered as a long run.
 
-we see 2 common types of long runs employed:
+The most common amount of vertical ascent for the weekly longest run is 1000-1500m, followed by 0-500. A run must be at least 30km in distance to be considered as a long run.
 
-1. flat long run with less than 500m vertical ascent.
-2. long run with 1000-1500m vertical ascent
+We see 2 common types of long runs employed:
+
+1. Flat long run with less than 500m vertical ascent
+2. Long run with 1000-1500m vertical ascent
 
 
 <img src="/assets/img/weekly_long_run_ascent_rolling_average.png">
-TODO: not much extra??
+
+TODO ???
 
 ### Long run duration
 <img src="/assets/img/weekly_long_run_duration_rolling_average.png">
-**Observations**  
-from feb 2019 to race day the top 10 runners dont seem to run more than 4 hrs for their long runs, on average. at first this comes as a suprise because it's easy to expect that the top 10 must be out there running for longer. that is certainly the case for *weekly* training duration, but their long runs cap at 4hrs during this period. it makes sense when thinking about the overall training load: the risk of overtraining and injury is too great when running for too long, and given that these runners have high training volume it makes sense as they want to be able to run the next day, and the next day, add (almost) infinitum.
 
+From Feb 2019 to race day the top 10 runners dont seem to run more than 4 hrs for their long runs, on average. At first this comes as a suprise because it's easy to expect that the top 10 must be out there running for longer. That is certainly the case for *weekly* training duration, but their long runs cap at 4hrs during this period. It makes sense when thinking about the overall training load: the risk of overtraining and injury is too great when running for too long, and given that these runners have high training volume it makes sense as they want to be able to run the next day, and the next day, add (almost) infinitum.
+
+<br/>
+<br/>
+<br/>
+<br/>
 ## Run days
 <img src="/assets/img/number_of_days_running_per_week.png">  
 
-**Observations**  
-the top 10 runners most often run 7 days a week.
+The top 10 runners most often run 7 days a week.
 
+<br/>
+<br/>
+<br/>
+<br/>
 ## Sharper sessions: speed, tempo, hills
 <img src="/assets/img/percentage_weeks_having_sessions.png">
 
-**Observations**  
-except for one runner, all the top 10 had at least 50% of their training weeks containing either a speed, or tempo, or hill session. race weeks were also counted as a session (except for uta race week).
+Except for one runner, all the top 10 had at least 50% of their training weeks containing either a speed, or tempo, or hill session. Race weeks were also counted as a session (except for uta race week).
 
-brendan davies had the most weeks containing at least one session. in addition, he consistently had the highest weekly training volume out of the top 10 runners which marks brendan as a high performance athlete who is able to handle high work loads and frequent competition. similarly for vlad shatrov. ~90% of the brendan's and vlad's weeks contained at least one session.
+Brendan Davies had the most weeks containing at least one session. In addition, he consistently had the highest weekly training volume out of the top 10 runners which marks brendan as a high performance athlete who is able to handle high work loads and frequent competition. Similarly for Vlad Shatrov. ~90% of the Brendan's and Vlad's weeks contained at least one session.
 
-anthony boyle is at the other end of the session spectrum. he did little to no sessions and appeared to only race six foot track before uta. yet he placed 10th at uta. anthony swam the most out of all the top 10, rapidly vamping up swimming even more as uta got closer. he also frequently had weeks where there was a 35km+ long run and a mid-week double run commute day of 20km+20km. this suggests the importance of strength for both the upper body core and legs. having a 40km day composed of running to work, working all day, and then running home must surely benefit the runner with being to handle fatigue, mentally and physically. knowing that a 20km run lays ahead of you when having a busy day must train the mental strength to 'just get it done'. ultras have the ability to find any weakness, no matter how small, and exploit it. often the consequence of said exploitation is to render the runner a nicely minted dnf. being able to combat that with training days like anthony's double commutes must surely be advantageous when such issues arise during a race. and you bet ya they arise, for every runner out there.
+Anthony Boyle is at the other end of the session spectrum. He did little to no sessions and appeared to only race Six Foot Track before UTA. Yet he placed 10th at UTA. Anthony swam the most out of all the top 10, rapidly vamping up swimming even more as UTA got closer. He also frequently had weeks where there was a 35km+ long run and a mid-week double run commute day of 20km+20km. This suggests the importance of strength for both the upper body core and legs. Having a 40km day composed of running to work, working all day, and then running home must surely benefit the runner with being able to handle fatigue, mentally and physically. Knowing that a 20km run lays ahead of you when having a busy day must train the mental strength to 'just get it done'. Ultras have the ability to find any weakness, no matter how small, and exploit it. Often the consequence of said exploitation is to render the runner a nicely minted DNF. Being able to combat that with training days like Anthony's double commutes must surely be advantageous when such issues arise during a race. And you bet ya they arise, for every runner out there.
 
-speed sessions are known to improve running efficiency, so anthony may have be making up for any apparent lack of efficiency with shear strength. it's difficult to say for certain because there's only one example of this training style in the top 10. one would need many more runners that invoke this performance/technique before concluding that this is actually the case. for now, we call it a working hypothesis.
+Speed sessions are known to improve running efficiency, so Anthony may have be making up for any apparent lack of efficiency with shear strength. It's difficult to say for certain because there's only one example of this training style in the top 10. One would need many more runners that invoke this performance/technique before concluding that this is actually the case. For now, we call it a working hypothesis.
 
+<br/>
+<br/>
+<br/>
+<br/>
 ## Overall insights
 
-1. the top 10 runners are running 6-7 days a week.
+1. The top 10 runners are running 6-7 days a week.
 
-2. nearing uta, the rolling average (in the last 8 weeks) for long runs is 35-40km. the most common amount of vertical gain for a long run was 1000m to 1500m. the next most common being 0-500m, suggesting that long flat runs were alson utilised. one must keep in mind that since we are using rolling averages of long run distance, we expect that there to be long runs exceeding 40km/ 1500m and some less. for example, one week may contain a 50kmlong run with lots of vert, then the following run may contain a flatter 30km long run.
+2. Nearing UTA, the rolling average (in the last 8 weeks) for long runs is 35-40km. The most common amount of vertical gain for a long run was 1000m to 1500m. The next most common being 0-500m, suggesting that long flat runs were alson utilised. One must keep in mind that since we are using rolling averages of long run distance, we expect that there to be long runs exceeding 40km/ 1500m and some less. For example, one week may contain a 50km long run with lots of vert, then the following run may contain a flatter 30km long run.
 
-3. speed/tempo/hill work is important and is done at least every other week.
+3. Speed/tempo/hill work is important and is done at least every other week.
 
-4. top 10 runners raced frequently across the 10month period of data. some raced as much as ~10 times.
+4. Top 10 runners raced frequently across the 10month period of data. Some raced as much as ~10 times.
 
-5. swimming is commonly employed for active recovery and in building core strength.
+5. Swimming is commonly employed for active recovery and in building core strength.
 
-6. by the time uta 100 occurs, most of the top 10 runners are averaging (across the last 8 weeks) a weekly vertical ascent of 1500m to 2250m. this is unexpectedly low but one must remember that we are talking about a rolling average, so there will be weeks exceeding and below this amount. 3 of the top 10 runners are averaging a much higher amount, 3000m to 4000m.
-7. jonathan o'loughlin's performance, given his comparitive low volume training, stands out amoungst the rest. if his strava data is actually complete ie. every training session was uploaded to strava, then local knowledge coupled with training specificity (stair workouts, on course long runs), talent, and some luck, seems to be another route towards a great performance. but given that jonathan has consistently placed highly across the 11 times he's competed, leads one to suspect that it's more talent rather than luck.
+6. By the time UTA 100 occurs, most of the top 10 runners are averaging (across the last 8 weeks) a weekly vertical ascent of 1500m to 2250m. This is unexpectedly low but one must remember that we are talking about a *rolling average*, so there will be weeks exceeding and below this amount. 3 of the top 10 runners are averaging a much higher amount, 3000m to 4000m.
 
+7. Jonathan O'Loughlin's performance, given his comparitive low volume training, stands out amoungst the rest. If his Strava data is actually complete ie. every training session was uploaded to Strava, then local knowledge coupled with training specificity (stair workouts, on course long runs), talent, and some luck, seems to be another route towards a great performance. But given that Jonathan has consistently placed highly across the 11 times he's competed, leads one to suspect that it's more talent rather than luck.
 
----
+<br/>
+<br/>
+<br/>
+<br/>
 
+## Closing thoughts
+
+TODO
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+## Other posts in the UTA 100 Series
 <a href="{{ site.baseurl }}{% post_url 2019-07-01-UTA-100-Review-Pt-1 %}">UTA 100 Review Pt 1: DNFs, finish times, checkpoints</a>
+<br/>
 <a href="{{ site.baseurl }}{% post_url 2019-07-02-UTA-100-Review-Pt-2 %}">UTA 100 Review Pt 2: Networks of runner interactions</a>
-
----
-
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [strava]: https://strava.com
 [livetrail-uta]: https://uta.livetrail.net/classement.php?course=UTA100&cat=scratch
