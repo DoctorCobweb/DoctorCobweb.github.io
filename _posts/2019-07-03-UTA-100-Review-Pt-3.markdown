@@ -214,6 +214,8 @@ Styles of training varied amoung the top 10. Most runners incorporated some form
 
 Due to most athletes racing so fequently, there were clear training blocks present in the data, ranging from ~8 weeks to 12 weeks. The recovery phase of any one block usually lasted 1-3 weeks and contained easier running, walks, and cross training. Virtually no athlete did no activity during a recovery phase: active recovery was absolutey favoured instead of doing nothing. For those who didn't race frequently we saw a consitent build-up, with cycles of training blocks stretched out much greater than 12 weeks. The rate of increase in volume was smaller for those runners who race less. In other words, frequent racers bounced back to higher volumes quicker.
 
+Six Foot Track is a popular race amoungst the top 10. 5 of the runners competed this year and placed well. As is mt Solitary ultra. Both these races are in the Blue Mountains which must add to the 'local knowledge' used by the runners to perform well in the UTA 100 event.
+
 This type of behaviour is a testament to the strength and ability of the top 10. Their bodies can manage the stress because they train smart. That's worth repeating:
 
 > The top 10 runners train smart.
@@ -223,16 +225,26 @@ This type of behaviour is a testament to the strength and ability of the top 10.
 <br/>
 <br/>
 ## Weekly distance
+
+By plotting the individual training series in one graph we can enable a better comparison between the runners. It should be noted that the `window width` for this plot has been increased to 8. This increases the effect of smoothing out short-term troughs and peaks. A value of 3 weeks was used originally but it resulted in a graph that was very hard to read.
+
+The following graph depicts long term trends.
+
 <img src="/assets/img/weekly_distance_rolling_average.png">
 
-Vlad Shatrov, Brendan Davies, and Morgan Lindqvist have the top 3 rolling-mean weekly running distance. Vlad was winning the race until 60km, having to stop due to injury. Morgan came third, and Brendan is the 2018 winner of UTA 100. It seems that consistently high training volume seems to pay off. But with higher training volume comes more risk of injury. over the span of the last 10 months of training data obtained there was little long term injuries sustained by these individuals. they have learnt how to train, address injuries (if any) properly and early before they lead to month-long training hiatuses.
+By the time UTA hits we see that that all the runners have **different** weekly mean distances. There is no magic number of kilometers to reach, if there were then we would've expected the top runners in UTA to at least converge somewhat. What this really means is that each runner has a training plan that's suited to them. There are no cookie-cutter courses for becoming a good ultra runner, we can only learn things in terms of broad-strokes, take the information into consideration, and implement a training plan it in a way that's suitably adapted for our own bodies.
 
-Justin Whitley had the greatest ramp up in running training. He used swimming as a means to balance the loading and it seems to have payed off with a great result, 4th place. Justin entered quite a few races close to the UTA 100 event, performed well across the lot of them, and remained injury free.
+The big whammy is getting an injury that requires months to heal. These runners don't seem to have that happening to them.
 
-The most consistent runner amoungst the top 10 was Matt Crehan; his running weekly rolling-mean line was the flatest out of the lot. Naively one would expect that it was the result of not racing much (having no 'down, recovery weeks'), but he was the 2nd most frequent racer, second to Brendan Davies. Matt was able race and train without little dipping in overall running training. Similarly to Justin Whitley, Matt swam alot. Often 2-4 sessions per week. But this is only one factor contributing to having such a successful training period. One needs to also look into weekly long runs, speed sessions, sequencing of runs withing a week etc. Before narrowing down on a conclusion for now we will just note down that swimming again appears in another successful training block.
+Later on we will see that despite runners having different weekly training volumes, there is more of a consensus on the long run, probably the most important run of the week for an ultra runner.
 
 
-Six Foot Track is a popular race amoungst the top 10. 5 of the runners competed this year and placed well. As is mt Solitary ultra. Both these races are in the Blue Mountains which must add to the 'local knowledge' used by the runners to perform well in the UTA 100 event.
+Justin Whitley had the longest, most consistent increase in running. He used swimming as a means to balance the loading and it seems to have payed off with a great result.
+
+The most *consistent* runner was Matt Crehan: his running rolling-mean weekly line was the *flatest* out of the lot. Morgan Lindqvist was a close second except for the increase near March 2019. Naively one would expect that having a flat trend would be the result of not racing much (ie. no recovery weeks, no peak weeks), but he was the 2nd most frequent racer, second only to Brendan Davies. Matt was able race and train without little dipping in overall running training. Similarly to Justin Whitley, Matt swam alot. Often 2-4 sessions per week. But this is only one factor contributing to having such a successful training period. One needs to also look into weekly long runs, speed sessions etc.
+
+Brendan Davies and Vlad Shatrov had the highest volume and Jonathan O'Loughlin had the least.
+
 
 <br/>
 <br/>
@@ -241,9 +253,9 @@ Six Foot Track is a popular race amoungst the top 10. 5 of the runners competed 
 ## Weekly vertical ascent
 <img src="/assets/img/weekly_ascent_rolling_average.png">
 
-Nearing race day, the 3 highest average weekly ascent performers were Mike Carroll, Brendan Davies, and Justin Whitley. Right before UTA 100 they were averaging (over the last 8 weeks), 3-4k of vertical ascent per week. The rest of the top 10 had 1.5-2.5k vertical gain average (over the last 8 weeks).
+Nearing race day, the 3 highest average weekly ascent performers were Mike Carroll, Brendan Davies, and Justin Whitley. Right before UTA 100 they were averaging (over the last 8 weeks), 3-4k of vertical ascent per week. The rest of the top 10 had 1.5-2.5k vertical gain average.
 
-Again, Justin Whitley and Jonathan O'Loughlin had the steepest increase in weekly average vertical ascent. Based on overall training volume, one may have expected Vlad Shatrov to have a weekly average vertical ascent closer to the 3 highest in the graph above. But this wasn't the case. He did compete in Six Foot Track in March, and we see that there was a drop in average weekly ascent closer to the start of April. But Vlad still maintained a large volume of running so it meant more flat running, on average. Perhaps he was dealing with the injury that would lead to his DNF at UTA 100, but without further information one can only speculate.
+Justin Whitley and Jonathan O'Loughlin had the steepest increase in weekly average vertical ascent. Based on overall training volume, one may have expected Vlad Shatrov to have a weekly average vertical ascent closer to the 3 highest in the graph above. But this wasn't the case. He did compete in Six Foot Track, and we see that there was a drop closer to the start of April. Vlad still maintained a large volume of running so it must have been more flat running, on average. Perhaps he was dealing with the injury that would lead to his DNF at UTA, but without further information this remains speculation.
 
 <br/>
 <br/>
@@ -251,37 +263,49 @@ Again, Justin Whitley and Jonathan O'Loughlin had the steepest increase in weekl
 <br/>
 ## The.Weekly.Long.Run 
 
-TODO
+Few things conjure up more anxiety, and statisfication once done, than the weekly long run. Especially as peak training load nears. Going to bed the night before knowing you're already fatigued and that when you awake there's, say, a 40km long run to rattle you from your bed, is a daunting prospect for most of us. Nothing prepares you more for how an ultra feels than a long run when you're already tired from a block of training. This is where the mental and physical sides meet. The weakest side will bring down the other.
+
+This is where we go to learn our muster.
 
 ### Long run distance
 <img src="/assets/img/weekly_long_run_distance_rolling_average.png">
 
 
-From Febuary 2019 to race day we see that, the rolling average for weekly long run distance for 8 out of 10 runners almost converge. In other words, these 8 runners are running roughly the same distance for their long run. Looking at April 2019 we see that most of the graph lines have a value between 30-40km. And because we are using a rolling mean with a window of 8 weeks this means that *at the start of April, most runners for the past 8 weeks have been running their long runs between 30km to 40km*.
+From Febuary 2019 to race day we see that, the rolling average for weekly long run distance for 8 out of 10 runners almost converge. In other words, these 8 runners are running roughly the same distance for their long run. Looking at April 2019 we see that most of the graph lines have a value between 30-40km. And because we are using a rolling mean with a window of 8 weeks this means that *at the start of April, most runners for the past 8 weeks have been running on average between 30km to 40km for their long runs*.
 
 The outliers for this period are Jonathan O'Loughlin and Justin Whitley. They dramatically ramp up their long run distances towards UTA 100 as compared to the other top 10.
 
-Looking back at the weekly running distances graph we note something interesting: whilst average weekly distances between runners vary a lot, average weekly long run distances don't. Average long run distance seems to be roughly the same for 8 out of the top ten runners. And so the differences in average weekly distance must be attributed to other types of running sessions, eg. general aerobic, speed/hill/tempo sessions etc.
+Looking back at the weekly running distances graph we note something interesting: whilst average weekly distances between runners vary a lot, average weekly *long run* distance doesn't. Average long run distance seems to be roughly the same for 8 out of the top 10 runners. And so the differences in average weekly distance must be attributed to other types of running sessions, eg. general aerobic, speed/hill/tempo sessions etc.
 
 ### Long run vertical ascent
 <img src="/assets/img/long_run_vertical_ascent_barplot.png">
 
-The most common amount of vertical ascent for the weekly longest run is 1000-1500m, followed by 0-500. A run must be at least 30km in distance to be considered as a long run.
+The most common amount of vertical ascent for the weekly longest run is 1000-1500m, followed by 0-500. Here we arbitrarily decide that a run must be at least 30km in order to be considered a long run.
 
 We see 2 common types of long runs employed:
 
 1. Flat long run with less than 500m vertical ascent
 2. Long run with 1000-1500m vertical ascent
 
+Below is the evolution of weekly long run vertical ascent for each runner.
+
 
 <img src="/assets/img/weekly_long_run_ascent_rolling_average.png">
 
-TODO ???
+The sharp spike for Morgan Lindqvist's data near September 2018 is due to UTMB. Justin Whitley and Jonathan O'Loughlin again had the sharpest increase in long run vertical ascent. Before UTA they were the two highest, respectively. It must have been a tough fews weeks on the legs for these two runners, but their body held up to the challenge and race day seemed to follow suit.
+
+The rest of the top 10 had a range of ~500m to ~1300m for their mean long run vertical ascent. This was seen consistently back through the 10 months of data.
+
+
+
+
 
 ### Long run duration
 <img src="/assets/img/weekly_long_run_duration_rolling_average.png">
 
-From Feb 2019 to race day the top 10 runners dont seem to run more than 4 hrs for their long runs, on average. At first this comes as a suprise because it's easy to expect that the top 10 must be out there running for longer. That is certainly the case for *weekly* training duration, but their long runs cap at 4hrs during this period. It makes sense when thinking about the overall training load: the risk of overtraining and injury is too great when running for too long, and given that these runners have high training volume it makes sense as they want to be able to run the next day, and the next day, add (almost) infinitum.
+From Feb 2019 to race day the top 10 runners dont seem to run more than 4 hrs for their long runs, on average. At first this comes as a suprise because it's easy to expect that the top 10 must be out there running for longer. That is certainly the case for *weekly* training duration, but their long runs cap at 4hrs during this period.
+
+But it makes sense when thinking about the overall training load: the risk of overtraining and injury is too great when running for too long, and given that these runners have high training volume they need to be able to run the next day, and the next, and ... add (almost) infinitum.
 
 <br/>
 <br/>
@@ -290,7 +314,7 @@ From Feb 2019 to race day the top 10 runners dont seem to run more than 4 hrs fo
 ## Run days
 <img src="/assets/img/number_of_days_running_per_week.png">  
 
-The top 10 runners most often run 7 days a week.
+The top 10 runners most often run 7 days a week. Enough said.
 
 <br/>
 <br/>
@@ -334,8 +358,15 @@ Speed sessions are known to improve running efficiency, so Anthony may have be m
 
 ## Closing thoughts
 
-TODO
+Hopefully you enjoyed this in-depth series of posts on the UTA 100km 2019 event. Thanks for reading and I hope you are in a better position now to reach your goals, however optimistic they are. What matters in the end is not really the result, but to maximise your enjoyment out on the trails. It's pretty easy to when your body and mind allows you to run through the Blue Mountains for a whole day.
 
+Enjoy the suffering a little more.
+
+Enourage each other a little more.
+
+And don't forget to breath it all in.
+
+(Time for pizza).
 <br/>
 <br/>
 <br/>
