@@ -16,7 +16,7 @@
 title: Slow Burn Stats
 email: slowburnstats@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Slow Burn Stats is a site dedicated to revealing the underlying structure and patterns in physical activity data.
+  Slow Burn Stats is dedicated to revealing the underlying structure and patterns contained in physical activity data.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
