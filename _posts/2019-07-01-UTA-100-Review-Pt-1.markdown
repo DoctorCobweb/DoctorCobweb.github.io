@@ -325,7 +325,7 @@ RULES
 1. If your stay is longer than the average for runners who finished, then you're more likely to drop.
 2. If you stay less than or equal to the average for runners who finished, then you're more likely to finish.
 
-Cavest 1: The true way of determining this is to compare the heights of each finish/dropout distribution for a given location and stay-time, but noone has the spare time to work this out whilst competing. We're only after a  general 'rule of thumb' here.
+Caveat 1: The true way of determining this is to compare the heights of each finish/dropout distribution for a given location and stay-time, but noone has the spare time to work this out whilst competing. We're only after a  general 'rule of thumb' here.
 
 Caveat 2: Looking at the above violin-plot shows that, to a good approximation, the distributions for male runners follow a unimodal distribution (aka "one hump on the camel's back"). Whereas the women distributions are multimodal (aka "two or more humps on the camel's back"). The following comparison applies better to unimodal distributions rather than multimodal ones, meaning that the women's guidelines for when they're more likely to drop are less accurate.
 
