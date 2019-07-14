@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "UTA 100 Review Pt 2: Runner Interactions"
+title:  "UTA 100 Review Pt 2: Runner interactions"
 date:   2019-07-02 10:59:31 +1000
 categories: running 
 ---
@@ -238,6 +238,7 @@ Next up in [Part 3][part-3] we take a deep dive into understanding the training 
 ## Other posts in the UTA 100 Series
 <a href="{{ site.baseurl }}{% post_url 2019-07-01-UTA-100-Review-Pt-1 %}">UTA 100 Review Pt 1: DNFs, finish times, checkpoints</a>
 <br/>
-<a href="{{ site.baseurl }}{% post_url 2019-07-03-UTA-100-Review-Pt-3 %}">UTA 100 Review Pt 3: Top 10 and how they train</a>
+<a href="{{ site.baseurl }}{% post_url 2019-07-03-UTA-100-Review-Pt-3 %}">UTA 100 Review Pt 3: How the top 10 train</a>
 
 [part-3]: {% post_url 2019-07-03-UTA-100-Review-Pt-3 %}
+
