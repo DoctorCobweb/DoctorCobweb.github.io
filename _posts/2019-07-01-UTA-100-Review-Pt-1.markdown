@@ -11,9 +11,9 @@ categories: running
 
 Welcome to Part 1 of an in-depth review of the 2019 Ultra Trail Australia 100km event. In this series of blog posts we will use the publically available data from [livetrail][livetrail-uta] and [strava][strava] to discover how the elite runners train, standout performances, and general runner/event management insights. Hopefully by knowing more about this event, future participants will be in a better position to 'tick off' their best-case-scenario goals for which they set for themselves. 
 
-Also, the author has always wondered if there was a way to learn what exactly went on during the event. Imagine if there were live commentators for the event, eg the veritable [Bruce McAvaney][bruce]. What would have been the highlights of the day? What did the 30,000ft view look like? Were there any truly heroic tales to tell? What can the *data* tell us and how can it be used to construct a much richer narrative for this already unique event? That is indeed the real burning motivation for doing this series of posts. Along the way we may learn something useful about how to better approach our training and race day.
+Also, the author has always wondered if there was a way to learn what exactly went on during the event. Imagine if there were live commentators for the event, eg the veritable [Bruce McAvaney][bruce]. What would have been the highlights of the day? What did the 30,000ft view look like? Were there any truly heroic tales to tell? What can the *data* tell us and how can it be used to construct a much richer narrative for this already unique event? That is indeed the real burning motivation for doing this series of posts.
 
-Double tie your shoelaces, check your nutrition, GPS lock your Garmin and get ready to push start because here we go. You've reached the (statistical) start line.
+Along the way we may learn something useful about how to better approach our training and race day.
 
 <br/>
 <br/>
