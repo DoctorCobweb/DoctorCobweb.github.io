@@ -13,6 +13,8 @@ Welcome to Part 1 of an in-depth review of the 2019 Ultra Trail Australia 100km 
 
 Also, the author has always wondered if there was a way to learn what exactly went on during the event. Imagine if there were live commentators for the event, eg the veritable [Bruce McAvaney][bruce]. What would have been the highlights of the day? What did the 30,000ft view look like? Were there any truly heroic tales to tell? What can the *data* tell us and how can it be used to construct a much richer narrative for this already unique event? That is indeed the real burning motivation for doing this series of posts.
 
+<br/>
+<br/>
 ### Contents  
 [1. Finish Times and Start Groups](#finish-times-and-start-groups)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Overall distribution](#finish-time-distribution-overall)  
@@ -31,11 +33,6 @@ Also, the author has always wondered if there was a way to learn what exactly we
 [4. Closing Thoughts](#closing-thoughts)  
 [5. Other Posts in UTA 100 Series](#other-posts-in-the-uta-100-series)  
 [6. Appendix](#appendix)  
-
-
-
-<br/>
-<br/>
 <br/>
 <br/>
 ## Finish times and Start Groups
