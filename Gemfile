@@ -36,5 +36,3 @@ gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
 
 gem "rake"
 ruby "2.6.2"
-
-gem "puma"

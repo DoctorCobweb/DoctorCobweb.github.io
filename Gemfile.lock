@@ -46,12 +46,9 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    nio4r (2.5.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.1)
-    puma (4.1.0)
-      nio4r (~> 2.0)
     rake (12.3.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
@@ -77,7 +74,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.8.6)
   minima (~> 2.0)
-  puma
   rake
   tzinfo (~> 1.2)
   tzinfo-data
