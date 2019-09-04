@@ -15,3 +15,7 @@ But how are the elite athletes managing to reach the division line, and stay the
 By discovering training principles using a data-driven approach, Slow Burn Stats will hopefully help every athlete, no matter what level, reach their full potential.
 
 Along the way there will also be some really interesting stories to tell.
+
+Hope you enjoy the content,
+
+Dre
