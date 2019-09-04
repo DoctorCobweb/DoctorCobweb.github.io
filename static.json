@@ -1,0 +1,5 @@
+{
+  "clean_ruls": true,
+  "https_only": true,
+  "root": "_site/"
+}
