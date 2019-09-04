@@ -13,11 +13,32 @@ Welcome to Part 1 of an in-depth review of the 2019 Ultra Trail Australia 100km 
 
 Also, the author has always wondered if there was a way to learn what exactly went on during the event. Imagine if there were live commentators for the event, eg the veritable [Bruce McAvaney][bruce]. What would have been the highlights of the day? What did the 30,000ft view look like? Were there any truly heroic tales to tell? What can the *data* tell us and how can it be used to construct a much richer narrative for this already unique event? That is indeed the real burning motivation for doing this series of posts.
 
+### Contents  
+[1. Finish Times and Start Groups](#finish-times-and-start-groups)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Overall distribution](#finish-time-distribution-overall)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.2 By Start Group](#finish-time-distribution-start-group)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.3 Race time for all runners, across the course](#race-time-for-all-runners-across-the-course)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.4 Runner speeds throughout the course](#runner-speeds-throughout-the-course)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.5 Traffic, traffic, traffic!](#traffic-traffic-traffic)  
+[2. Dropouts / DNFs](#dropouts--dnfs)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Dropout %, per Start Group](#dropout-percent-per-start-group)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.2 What Age Group has the highest dropout % ?](#what-age-group-has-the-highest-dropout-percentage)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.3 DNFs % per Age Group, per Start Group](#dnf-percentages-per-age-group-per-start-group)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.4 DNFs across the course](#dnfs-across-the-course)  
+[3. Checkpoints](#checkpoints)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1 Watch out! You're heading towards a dropout](#watch-out-youre-heading-towards-a-dropout)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.2 Peak hour traffic: Arrival demand at Checkpoints](#peak-hour-traffic-arrival-demand-at-checkpoints-throughout-the-day)  
+[4. Closing Thoughts](#closing-thoughts)  
+[5. Other Posts in UTA 100 Series](#other-posts-in-the-uta-100-series)  
+[6. Appendix](#appendix)  
+
+
+
 <br/>
 <br/>
 <br/>
 <br/>
-## Finish times and start groups
+## Finish times and Start Groups
 This section aims to address high-level questions that are pretty common to any type of running event. We will concern ourselves with questions about start groups, how they differ amoungst each other, and the performance of different age groups. Start group mixing is visualized across the course by creating 'barcode' plots with the intention of better understanding the onset of congestion and how mixed up the field is once the later stages of the course are reached.
 
 
@@ -37,7 +58,7 @@ Talk about perseverance and determination.
 
 Who is doing it tougher...the elites or the warriors?
 
-### Finish time distribution: Start group
+### Finish time distribution: Start Group
 Let's segment the data in start groups before plotting finishing times. This will show how each start group performed, but more importantly will enable the comparison of runners from different start groups. In doing so, we make our first observation of runners who performed well beyond their start group intended finish times.
 
 The graph below is something called a 'swarm plot' and is commonly used when comparing categories in data. In our case the categories are start groups. Within each start group there is horizontal dispersion for a given height aka. christmas tree braches. In other words, if a start group has christmas tree braches that are very *wide* then it means lots of runners had similar finishing times. That's all.
@@ -48,7 +69,7 @@ Firstly note the general trend that as we move from start group 1 to start group
 
 Check out start group 1. The bulk of the runners finished roughly between 11-13.5hrs, the fastest 4 runners finishing roughly the same time, and the long tail of runners taking longer than 15hrs. The 2 slowest runners were passed by most of start group 2 and 3. They were also passed by runners from all other start groups, even start group 7. This suggests that some runners in start group 7 had performed so well that they caught most of the field and even some start group 1 runners. Let's look into this further.
 
-#### Fastest group 7 runners
+#### Fastest Group 7 runners
 
 The three fastest runners in start group 7 had finishing times of less than 15hrs. To get a handle on what that means, draw a horizontal line from the fastest start group 7 runner. Every dot that is above that line coincides with a runner they passed. That's the majority of the field! This person passed all group 6, all group 5, all group 4, all group 3, most group 2, about half of group 1 runners. Wow. The same story for the 2nd and 3rd fastet group 7 runners.
 
@@ -68,7 +89,7 @@ Imagine for a second what that must have felt like, to pass the majority UTA 100
 Passing a runner every minute on average for 14ish hrs. If there was ever an example of what the inimitable David Goggins refers to as `going out and taking souls`, this is it. If you're unfamiliar with [David Goggins][the_goggins] go check him out. Lacking long run motivation? No problems, put on the Goggins and you will have left 30km of rubber on the road without even noticing.
 
 
-#### Slowest group 1 runners
+#### Slowest Group 1 runners
 Looking back at the swarm plot we see quite a lot of group 1 finishing times of 15hrs+. The UTA website states that start group 1 is for runners who expect to finish between 8hrs40mins and 13hrs46min so these runners were either miscategorized or had a much tougher than expected day.   
 
 Digging into the data reveals 18 runners finished after 15hrs, with the slowest being around 18hrs. Let's take the top and bottom 18 runners in start group 1 across the course.
@@ -91,7 +112,7 @@ We see that the divergence begins at Dunphys and continues to grow monotonically
 The spread in runner times across the course looks interesting. How does the entire field look across the course?
 
 
-### Race time for all runners,  across the course
+### Race time for all runners, across the course
 
 <img src="/assets/img/expansion_of_race_time_across_course.png">
 
@@ -138,7 +159,7 @@ Sections which contain very runnable terrain like smooth firetrack, flat non-tec
 Have a look at the finish line distribution which contains information on speeds going up Furber Steps. Not so suprisingly we see that it has the largest jump towards slower speeds out of all distributions. That last ~1km of almost 45% (?!) incline is like a brick wall. Not only does the average runner speed get slower but the width of the distribution gets completly stretched out. It breaks people. Well, almost. Later on when we delve into dropout/DNF statistics we will see that despite the challenge of ascending Furber Steps, absolutely no one drops out. In the language of Stava...kudos.
 
 
-### Traffic, traffic, traffic
+### Traffic, traffic, traffic!
 
 The final visualation of this section is in regards to start group mixing. As the section title suggests, here we're concerned with runner traffic along the course and possible congestion points. To create the visualization below we colour each runner based on their start group, give them a rank based on the time they arrived at each checkpoint, then use rank to determine where on the vertical axis they should be plotted.
 
@@ -166,7 +187,7 @@ By definition the stand out performers necessarily stand out despite the differe
 <br/>
 
 
-## Dropouts/ DNFs
+## Dropouts / DNFs
 
 No one wants to not finish what they started, especially something as challenging as UTA 100km. The payoff is so great. It's not about the medal, nor time (for most). It's that deep sense of satisfaction that consumes you after finishing, knowing you've finally done something which required you to perform at your best whilst entertaining the rather high likelihood of failure. Often little problems become amplified over long durations which UTA has in spades. Learn to address your problems quickly before the unthinkable happens. The. DNF.
 
@@ -176,7 +197,7 @@ Are you at risk? Where exactly along the course are you most at risk? And what c
 
 Read on to find out the answers.
 
-### Dropout percent per start group
+### Dropout percent per Start Group
 
 Let's start by looking at DNF percentage for each start group.
 
@@ -188,7 +209,7 @@ Curiously, start group 1 was not the lowest being 16%. One would have expected t
 
 We begin to answer this question by looking at the dropout rates of each age group.
 
-### What age group has the highest dropout percentage?
+### What Age Group has the highest dropout percentage?
 
 <img src="/assets/img/dropout_percentage_per_age_group.png">
 
@@ -200,7 +221,7 @@ Could it be that group 1 was composed of age group runners who were more likely 
 
 
 
-### DNF percentages per age group, per start group
+### DNF percentages per Age Group, per Start Group
 
 The following graph is rather informationally dense. Each age group has its own colour to aid with visualization across start groups.
 
@@ -340,7 +361,7 @@ Finally, here is the table containing information on average time spent at check
 
 **Table 4. Average time spend at the three major checkpoints.**  
 
-### Peak hour traffic. Arrival demand at checkpoints throughout the day.
+### Peak hour traffic. Arrival demand at Checkpoints throughout the day.
 
 Throughout the day, in blocks of 10mins, how many runners arrive at the main checkpoints? We only consider the three main checkpoints from the previous section.
 

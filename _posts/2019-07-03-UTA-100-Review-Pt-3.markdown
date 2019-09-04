@@ -14,9 +14,34 @@ There will be some suprises.
 
 <br/>
 <br/>
+### Contents
+[1 Individual training approaches of Top 10](#individual-training-approaches-of-top-10)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.0 Vlad Shatrov](#vlad-shatrov---leader-up-until-dnf-at-60km)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Marcin Swierc](#marcin-swierc---1st---093115)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.2 Jonathan O'Loughlin](#jonathan-oloughlin---2nd---094228)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.3 Morgan Lindqvist](#morgan-lindqvist---3rd---094345)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.4 Justin Whitley](#justin-whitley---4th---095618)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.5 Mike Carroll](#mike-carroll---5th---101900)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.6 Scott Richmond](#scott-richmond---6th---102609)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.7 Matt Crehan](#matt-crehan---7th---103325)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.8 Peter Wilson](#peter-wilson---8th---103418)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.9 Brendan Davies](#brendan-davies---9th---104538)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.10 Anthony Boyle](#anthony-boyle---10th---105842)  
+[2 Overall observations of individual training approaches](#overall-observations-of-individual-training-approaches)  
+[3 Weekly distance](#weekly-distance)  
+[4 Weekly vertical ascent](#weekly-vertical-ascent)  
+[5 The.Weekly.Long.Run](#theweeklylongrun)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.1 Distance](#long-run-distance)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.2 Vertical ascent](#long-run-vertical-ascent)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.3 Duration](#long-run-duration)  
+[6 Run days](#run-days)  
+[7 Sharper sessions: speed, tempo, hills](#sharper-sessions-speed-tempo-hills)  
+[8 Overall insights](#overall-insights)  
+[9 Closing thoughts](#closing-thoughts)  
+[10 Other posts in the UTA 100 Series](#other-posts-in-the-uta-100-series)  
 <br/>
 <br/>
-## Individual training approaches
+## Individual training approaches of Top 10
 
 [Strava][strava] is a popular fitness app used for storing training sessions. In addition to keeping track of each session, Strava shows weekly and yearly statistics that helps athletes oversee their progression within any training block.
 
@@ -39,7 +64,7 @@ The following graphs are weekly run distance using a rolling-mean with `window w
 
 ---
 <br/>
-**Vlad Shatrov - Leader up until DNF at ~60km**
+### Vlad Shatrov - Leader up until DNF at ~60km
 <img src="/assets/img/vlad_shatrov_training.png">
 <div style="text-align: center"><img  width="90" height="40" src="/assets/img/training_legend.png"></div>
 <br/>
@@ -56,7 +81,7 @@ Occasional flat long runs was a trait commonly observed across the top 10 athlet
 
 ---
 <br/>
-**Marcin Swierc - 1st - 09:31:15**
+### Marcin Swierc - 1st - 09:31:15
 
 Marcin does have a Strava profile but appears to not upload frequently, thus rendering a formal analysis of his training impossible. It would have been nice to see considering is the 2018 TDS champion. Some basic research and YouTube-ing reveals he basically wins almost everything he enters. Truly a world class athlete.
 <br/>
@@ -64,7 +89,7 @@ Marcin does have a Strava profile but appears to not upload frequently, thus ren
 
 ---
 <br/>
-**Jonathan O'Loughlin - 2nd - 09:42:28**
+### Jonathan O'Loughlin - 2nd - 09:42:28
 <img src="/assets/img/jonathan_oloughlan_training.png">
 <div style="text-align: center"><img  width="90" height="40" src="/assets/img/training_legend.png"></div>
 <br/>
@@ -79,7 +104,7 @@ He is one of only four runners to have completed *every* UTA. That's every race 
 
 ---
 <br/>
-**Morgan Lindqvist - 3rd - 09:43:45**
+### Morgan Lindqvist - 3rd - 09:43:45
 <img src="/assets/img/morgan_lindqvist_training.png">
 <div style="text-align: center"><img  width="90" height="40" src="/assets/img/training_legend.png"></div>
 <br/>
@@ -96,7 +121,7 @@ We also see the presence of shorter 10km races.
 
 ---
 <br/>
-**Justin Whitley - 4th - 09:56:18**
+### Justin Whitley - 4th - 09:56:18
 
 <img style="text-align: center" src="/assets/img/justin_whitley_training.png">
 <div style="text-align: center"><img  width="90" height="40" src="/assets/img/training_legend.png"></div>
@@ -116,7 +141,7 @@ Justin trained smart and consistently. There appeared to be no signs of injury d
 
 ---
 <br/>
-**Mike Carroll - 5th - 10:19:00**
+### Mike Carroll - 5th - 10:19:00 
 <img src="/assets/img/mike_carroll_training.png">
 <div style="text-align: center"><img  width="90" height="40" src="/assets/img/training_legend.png"></div>
 <br/>
@@ -129,7 +154,7 @@ Towards the peak of UTA training back to back long runs were used, with the seco
 
 ---
 <br/>
-**Scott Richmond - 6th - 10:26:09**
+### Scott Richmond - 6th - 10:26:09
 <img src="/assets/img/scott_richmond_training.png">
 <div style="text-align: center"><img  width="90" height="40" src="/assets/img/training_legend.png"></div>
 <br/>
@@ -144,7 +169,7 @@ Scott commonly did speed sessions, tempos, and recovery hikes.
 
 ---
 <br/>
-**Matt Crehan - 7th - 10:33:25**
+### Matt Crehan - 7th - 10:33:25
 <img src="/assets/img/matt_crehan_training.png">
 <div style="text-align: center"><img  width="90" height="40" src="/assets/img/training_legend.png"></div>
 <br/>
@@ -165,7 +190,7 @@ Matt ran tempos, long hill sessions both long (double repeat of a 1150m peak) an
 
 ---
 <br/>
-**Peter Wilson - 8th - 10:34:18**
+### Peter Wilson - 8th - 10:34:18
 
 No data found.
 <br/>
@@ -173,7 +198,7 @@ No data found.
 
 ---
 <br/>
-**Brendan Davies - 9th - 10:45:38**
+### Brendan Davies - 9th - 10:45:38
 <img src="/assets/img/brendan_davies_training.png">
 <div style="text-align: center"><img  width="90" height="40" src="/assets/img/training_legend.png"></div>
 <br/>
@@ -191,7 +216,7 @@ Being a professional coach requires hosting a lot of group training sessions. So
 
 ---
 <br/>
-**Anthony Boyle - 10th - 10:58:42**
+### Anthony Boyle - 10th - 10:58:42
 <img src="/assets/img/anthony_boyle_training.png">
 <div style="text-align: center"><img  width="90" height="40" src="/assets/img/training_legend.png"></div>
 <br/>

@@ -15,9 +15,25 @@ Reckless abandon.
 
 <br/>
 <br/>
+### Contents  
+[1 Graph Algorithm Design](#graph-algorithm-design)  
+[2 Snapshots in time](#snapshots-in-time)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.1 3km to Narrow Neck](#3km-to-narrow-neck)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Dunphys to Ironpot](#dunphys-to-ironpot)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Fairmont to Queen Victoria Hospital](#fairmont-to-queen-victoria-hospital)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.4 Furber Base to Finish line](#furber-base-to-finish-line)  
+[3 Traversing the graph](#traversing-the-graph)  
+[4 Highly connected people](#highly-connected-people)  
+[5 Sparse interactions](#sparse-interactions)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.1 Top 3 Males](#top-3-males)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.2 Top 3 Females](#top-3-females)  
+[6 Graph Inflation](#graph-inflation)  
+[7 Closing thoughts](#closing-thoughts)  
+[8 Other posts in the UTA 100 Series](#other-posts-in-the-uta-100-series)  
 <br/>
 <br/>
-### Graph algorithm design
+
+## Graph Algorithm Design
 
 >Feel free to skip this section. It gets a little technical but is included for those who may be interested.
 
@@ -38,7 +54,7 @@ Nonetheless, the graphs provide a **lower bound** estimate of runner interaction
 <br/>
 <br/>
 <br/>
-### Snapshots in time
+## Snapshots in time
 
 Graphs were constructed for all adjacent checkpoints and inspected. The following sample of graphs was chosen because each graph is geographically isolated from rest of the graphs in the sample, whilst the collection of graphs constituted reasonable coverage of the entire course.
 
@@ -49,8 +65,9 @@ Graphs were constructed for all adjacent checkpoints and inspected. The followin
 
 The size of a node (runner) is a reflection of how many interactions a runner had. The bigger, the more interactions. Start groups are designated a color as shown in the graph. Have a scroll through and observe the change in runner interaction behaviour as we move closer to the finish line. 
 
+### 3km to Narrow Neck  
 <img src="/assets/img/gephi_3km_to_narrow_neck.png">
-**3km to Narrow Neck**
+**Above: 3km to Narrow Neck**
 <br/>
 <br/>
 At the beginning of the race there is not much mixing of start groups. Between the 3km and Narrow Neck checkpoints, start group 1 and 2 are almost isolated from the rest of the field; there are not many edges connecting start groups 1 and 2 to the rest of the field. They've formed a rather large cohort. It should be noted that there are indeed a few red edges connecting runners in start group 2 and 3, which means a few group 3 runners caught group 2 before getting to Narrow Neck. Also, within group 1 and 2 there looks to be some mixing.
@@ -60,8 +77,9 @@ Even at this stage the top runners in group 1 have emerged; there is a small num
 Groups 3 to 7 display mixing but only between *adjacent* groups. For example, runners in group 4 have interacted with group 3 and 5 runners only, but not interacted with runners from non-adjacent groups 1/2/6/7. There simply hasn't been enough time and ground covered to get large amounts of mixing between all groups.
 
 
+### Dunphys to Ironpot  
 <img src="/assets/img/gephi_dunphys_to_ironpot.png">
-**Dunphys to Ironpot**
+**Above: Dunphys to Ironpot**
 <br/>
 <br/>
 Here we see the emergence of a select number of runners who interacted much more than the average runner. There are 2 very large nodes present: a runner in group 3, and a runner in group 7.
@@ -70,8 +88,9 @@ It's hard to see but around the circumference there are a few *single* green dot
 
 Overall, group 1 still displays the least amount of mixing as compared to all other groups, whereas groups 4/5/6/7 have large amounts of mixing.
 
+### Fairmont to Queen Victoria Hospital  
 <img src="/assets/img/gephi_fairmont_to_qvh.png">
-**Fairmont to Queen Victoria Hospital**
+**Above: Fairmont to Queen Victoria Hospital**
 <br/>
 <br/>
 
@@ -85,8 +104,9 @@ Perhaps even working together to hunt down far-off runners who fancy their chanc
 
 Toot toot.
 
+### Furber base to Finish Line  
 <img src="/assets/img/gephi_furber_base_to_finish_line.png">
-**Furber base to Finish Line**
+**Above: Furber base to Finish Line**
 <br/>
 <br/>
 
