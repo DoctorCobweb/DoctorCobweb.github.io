@@ -9,9 +9,13 @@ categories: running
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-Welcome to Part 1 of an in-depth review of the 2019 Ultra Trail Australia 100km event. In this series of blog posts we will use the publically available data from [livetrail][livetrail-uta] and [strava][strava] to discover how the elite runners train, standout performances, and general runner/event management insights. Hopefully by knowing more about this event, future participants will be in a better position to 'tick off' their best-case-scenario goals for which they set for themselves. 
+Welcome to Part 1 of an in-depth review of the 2019 Ultra Trail Australia 100km event. In this series of blog posts we will be using publically available data from [livetrail][livetrail-uta] and [strava][strava], to understand a little better how the elite athletes train, discover any standout performances of the day, and quantify useful metrics for runners and event management planning their day.  
 
-Also, the author has always wondered if there was a way to learn what exactly went on during the event. Imagine if there were live commentators for the event, eg the veritable [Bruce McAvaney][bruce]. What would have been the highlights of the day? What did the 30,000ft view look like? Were there any truly heroic tales to tell? What can the *data* tell us and how can it be used to construct a much richer narrative for this already unique event? That is indeed the real burning motivation for doing this series of posts.
+I have participated in the event twice (1 finish, 1 DNF), and whilst out on course have always wondered about what exactly was going on throughout the field. With plenty of time to daydream I'd imagine what live commentators for the event would be saying. . What would they choose to talk about? What would be featured on the highlights of the day? What does the 30,000ft view of the event look like? Were there any truly heroic tales to tell? Surely with an event of this magnitude there would be some spectacular blow-ups, some over-performers, under-performers, and everything else inbetween.  
+
+What can the **data** tell us and how can it be used to construct a much richer narrative for this already unique, spectacular event.  
+
+Hopefully by knowing more about this event any future participants will be in a better position to achieve their goals.  
 
 <br/>
 <br/>
@@ -40,25 +44,22 @@ This section aims to address high-level questions that are pretty common to any 
 
 
 ### Finish time distribution: Overall
-What is the most common *hourly* finishing time? In marathon parlance, someone who finishes in 2:30:01 (hrs:mins:secs) is gratuitously considered as good as someone who takes 2:30:59. They're both a `2:30` runner. Who cares about seconds in a marathon, really. A natural extension of this to ultras is to also disregard the minutes (!). So two UTA 100km finishers who took 14:01:01, 14:59:01 respectively, are considered `14 hr` level runners.
-
-Q. What does an extra 59 minutes really mean to someone in an ultra?
-
-A. Fractionally, it's only a *tiny* bit more of suffering. May as well just round it down to zero.
+What is the most common *hourly* finishing time?
 
 <img src="/assets/img/distribution_of_runner_finishing_times.png">
 
 The most common finishing time is 17hrs, followed by 15hrs, then 19hrs. Take a look at how many runners finished in 9 or 10hrs. Not many. Immediately we see how rare and special they are. There's a big difference between the number of runners who finished in 11hrs and those who finished in 9 or 10hrs. The runners at the sharp end of the field are fast. Like reaaallly fast.
-We will revist these elite runners in another blog post when we ask about how they train, how they avoid injury, and how their methodologies can be adapted to be used in other training plans.  After the 21hr finishers we see roughly the same number of runners finishing in each hour category, all the way up to 27hrs. There were some runners out there for 28hrs. To put that into perspective imagine you finish mid-pack, clean yourself up, eat pizza, sleep 8hrs then go out for breakfast and coffee the next morning. The time that you pick up the bill for breakfast is about the same time as these people are crossing the line.  
+We will revist these elite runners in another blog post when we ask about how they train, how they avoid injury, and how their methodologies can be adapted to be used in other training plans.  After the 21hr finishers we see roughly the same number of runners finishing in each hour category, all the way up to 27hrs.
 
-Talk about perseverance and determination.
+There were some runners out there for 28hrs. Talk about perseverance and determination!
 
-Who is doing it tougher...the elites or the warriors?
+Question: who is doing it tougher...the elites or the warriors?
 
 ### Finish time distribution: Start Group
-Let's segment the data in start groups before plotting finishing times. This will show how each start group performed, but more importantly will enable the comparison of runners from different start groups. In doing so, we make our first observation of runners who performed well beyond their start group intended finish times.
+Let's segment the data into start groups before plotting finishing times. This will show us how each start group performed compared to all the others.
 
-The graph below is something called a 'swarm plot' and is commonly used when comparing categories in data. In our case the categories are start groups. Within each start group there is horizontal dispersion for a given height aka. christmas tree braches. In other words, if a start group has christmas tree braches that are very *wide* then it means lots of runners had similar finishing times. That's all.
+One thing to note: for a given start group, if many runners had similar finishing times, the graph will spread the dots out horizontally to prevent them from overlapping each other. This has the effect of making the plot look like a christmas tree. So if loads of runners had similar finishing times, the plot will have a very wide tree branch, at that vertical location.
+
 
 <img src="/assets/img/distribution_finish_times_per_start_group.png">
 
