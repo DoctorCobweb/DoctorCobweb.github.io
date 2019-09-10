@@ -5,13 +5,11 @@ date:   2019-07-02 10:59:31 +1000
 categories: running 
 ---
 
-In this post we concern ourselves with the caclulation and visualization of runner interactions throughout the course. When a runner passes or is passed by a runner, it is considered to be an interaction. At the human level an interaction comes in many forms. Sometimes it's a bit of a mumble, sometimes it's a conversation about how the training block leading up to UTA 100 went, or about how unreal the scenery is.
+In this post we concern ourselves with the caclulation and visualization of runner interactions throughout the course. When a runner passes or is passed by a runner, it is considered to be an interaction. At the human level an interaction comes in many forms. Sometimes it's a bit of a mumble, sometimes it's a conversation about how the training block went leading up to UTA 100, or about how utterly amazing the scenery is.
 
-But almost always there's some form of encouragement exchanged between the two. Both runners know exactly what they're getting themselves into.
+But almost always there is some form of encouragement exchanged. Both runners know exactly what they have got themselves into.
 
-That's what makes running ultras so enjoyable.
-
-Reckless abandon. 
+And that is what makes running ultras so enjoyable. Reckless abandon. 
 
 <br/>
 <br/>
@@ -48,7 +46,7 @@ The union of these two sets of runners constitutes the interactions of runner `i
 
 It should be noted that any intermediate interactions of runners between two checkpoints **cannot be captured**. For example, if runner 1 passed runner 2, but then runner 2 passed runner 1, between the checkpoints, then this would not show up as an interaction. The way to keep track of this type of behaviour would be to look at all adjacent intermediate checkpoint pairs (if possible), follow the two runners, and count every time one passed the other. We mention this because when graphing interactions for checkpoints that are very far apart, it's more likely that we'll miss these types of to-and-fro interactions. For example, if we used the 3km checkpoint as the first and Furber Steps Base as the second. 
 
-Nonetheless, the graphs provide a **lower bound** estimate of runner interactions.
+Nonetheless, the graphs provide a **lower bound** estimate of the number of runner interactions.
 
 <br/>
 <br/>
@@ -63,7 +61,9 @@ Graphs were constructed for all adjacent checkpoints and inspected. The followin
 3. Fairmont to Queen Victoria Hospital (QVH)
 4. Furber Base to the Finish Line
 
-The size of a node (runner) is a reflection of how many interactions a runner had. The bigger, the more interactions. Start groups are designated a color as shown in the graph. Have a scroll through and observe the change in runner interaction behaviour as we move closer to the finish line. 
+Every dot is a runner, and the size of a dot is a reflection of how many interactions that runner had. The bigger the dot, the more interactions that runner had. A line joining two runners constitutes an interaction. Start groups are designated a color as shown in the graph.  
+
+Have a scroll through and observe the change in behaviour of runner interactions as we move closer to the finish line. First the graphs are sharply segmented into start group colors, then as we progress through the course we see more mixing of runners.  
 
 ### 3km to Narrow Neck  
 <img src="/assets/img/gephi_3km_to_narrow_neck.png">
@@ -72,9 +72,9 @@ The size of a node (runner) is a reflection of how many interactions a runner ha
 <br/>
 At the beginning of the race there is not much mixing of start groups. Between the 3km and Narrow Neck checkpoints, start group 1 and 2 are almost isolated from the rest of the field; there are not many edges connecting start groups 1 and 2 to the rest of the field. They've formed a rather large cohort. It should be noted that there are indeed a few red edges connecting runners in start group 2 and 3, which means a few group 3 runners caught group 2 before getting to Narrow Neck. Also, within group 1 and 2 there looks to be some mixing.
 
-Even at this stage the top runners in group 1 have emerged; there is a small number of runners with low connectivity to the rest of group 1, located at roughly 12 o'clock in the above graph. At this stage we assume the field is still highly compressed on so many interactions are probable. The conclusion that the low connectivity group 1 runners are indeed the lead runners, and not some other further-back runners who just so happen to have not had many interactions, is the favoured hypothesis at this stage. 
+Even at this stage the top runners in group 1 have emerged; there is a small number of runners with low connectivity to the rest of group 1, located at roughly 12 o'clock in the above graph. At this stage we assume the field is still highly compressed, meaning many interactions are probable. The conclusion that the low connectivity group 1 runners are indeed the lead runners, and not some other further-back runners who just so happen to have not had many interactions, is the favoured hypothesis at this stage. 
 
-Groups 3 to 7 display mixing but only between *adjacent* groups. For example, runners in group 4 have interacted with group 3 and 5 runners only, but not interacted with runners from non-adjacent groups 1/2/6/7. There simply hasn't been enough time and ground covered to get large amounts of mixing between all groups.
+Groups 3 to 7 display mixing but only between immediately *adjacent* groups. For example, runners in group 4 have only interacted with group 3 and 5 runners. There simply has not been enough time and ground covered to get large amounts of mixing between non-adjacent groups.
 
 
 ### Dunphys to Ironpot  
@@ -82,9 +82,9 @@ Groups 3 to 7 display mixing but only between *adjacent* groups. For example, ru
 **Above: Dunphys to Ironpot**
 <br/>
 <br/>
-Here we see the emergence of a select number of runners who interacted much more than the average runner. There are 2 very large nodes present: a runner in group 3, and a runner in group 7.
+Here we see the emergence of a select number of runners who interacted much more than the average runner. There are 2 very large nodes present: a runner in group 3 (large red dot at 10 o'clock position), and a runner in group 7 (large purple dot at 2 o'clock position).
 
-It's hard to see but around the circumference there are a few *single* green dots. These are group 1 runners who had no interactions between Dunphys and Ironpot checkpoints.
+It's hard to see but around the circumference there are a few *single* green dots. There is one at 12 o'clock, and 3 at the 7 o'clock position. Try zooming in to see them. These are group 1 runners who had no interactions between Dunphys and Ironpot checkpoints.
 
 Overall, group 1 still displays the least amount of mixing as compared to all other groups, whereas groups 4/5/6/7 have large amounts of mixing.
 
@@ -94,15 +94,13 @@ Overall, group 1 still displays the least amount of mixing as compared to all ot
 <br/>
 <br/>
 
-There is a singular highly-connected runner in group 7. The rest of the field looks to have consistent mixing. Non-adjacent start groups are interacting.
+There is a singular highly-connected runner in group 7. The rest of the field looks to have consistent mixing. Non-adjacent start groups are now interacting.
 
 There is still the presence of group 1 runners with no interactions, located around the circumference. And group 1 looks to have the least amount of mixing overall, as previously discussed for Dunphys to Ironpot.
 
 At the 11 o'clock position, there are ~10 group 1 runners who have split off from the main graph. One suspects this is a cohort of runners geographically isolated from the rest of the group 1 runners. These runners are in a 'pack'. We use apostrophies here because it may well not be a pack in the sense of a very densely packed number of runners, but compared to the rest of the field, these runners have only interacted within their small group, and for this reason we believe the use of the term 'pack' is somewhat valid. It's a nice thought though. A pack of runners, this far into the race, working together to boost each other's performance.
 
-Perhaps even working together to hunt down far-off runners who fancy their chances, unbeknownst to the steam train rolling down the trails, fastly aprroaching from behind.
-
-Toot toot.
+Perhaps the pack is even working together to hunt down far-off runners who fancy their chances. Unbeknownst to the lone runner a steam train has begun rolling down the trail, fast approaching and on a direct route to the finish line, making no stops.
 
 ### Furber base to Finish Line  
 <img src="/assets/img/gephi_furber_base_to_finish_line.png">
@@ -110,17 +108,19 @@ Toot toot.
 <br/>
 <br/>
 
-Wow. What an interesting graph. It looks completely different to the others. Why?
+What an interesting graph. It looks completely different to the others. Why?
 
-First of all, there are less nodes contained in this graph than for the others. Less runners reached the base of Furber Steps as compared to, say, Narrow Neck checkpoint. Secondly, there is no longer one large graph of connected runners. Instead there a many, many smaller graphs. And for each smaller graph there are many connections between the runners making up the small group, suggesting runners ascended Furber Steps together in small groups.
+First of all, there are less nodes contained in this graph than for the others. Less runners reached the base of Furber Steps as compared to, say, Narrow Neck checkpoint. Secondly, there is no longer one large graph of connected runners. Instead there a many smaller graphs. And for each smaller graph there are many connections between the runners suggesting that they ascended Furber Steps together.
 
-At this stage of the race you're just holding on. Literally and figuratively. You're pulling yourself up the steps using the handrails. Perhaps the shared suffering between runners is an emergent property that provides the necessary boost in adreneline. Or perhaps there's no adreneline left at this stage and every runner's `autopilot` system has been engaged, whereby the autopilot behaviour is to naturally clump runners together.
+At this stage of the race you're just holding on. Literally and figuratively. You're pulling yourself up the steps using the handrails. There's nothing left in your legs, so the logic to use your upper body to walk up the steps seems somewhat ... logical.  
 
-From the logistical point of view, there's not much of an opportunity to pass another runner on Furber Steps. Though it should be noted even at this stage people are polite, and offer to let someone stronger pass. This far in, passing doesn't really seem to matter for most of the field. Yes if you're chasing a spot on the podium then for sure, passing would seem warranted, almost necessary.
+Perhaps the shared suffering between runners is an emergent property that provides a much needed boost in adreneline to get you up to the finish line? Or perhaps there's no adreneline left at this stage and every runner's autopilot system has been engaged, whereby the autopilot behaviour is to naturally band together?
 
-But try to take it all in. Take the time to come to terms with your accomplishment.
+From a logistical point of view, Furber Steps does not provide you with much of an opportunity to pass another runner. The pathway is narrow and precarious. Add to that the possibility of it being the night time, it becomes somewhat rational to stop pushing past people and just enjoy the experience. Though it should be noted that even at this stage people are still polite offering to let someone stronger pass.  
 
-Try to enjoy the process because soon it's going to be all over for another year.
+Take the time to come to terms with your accomplishment.
+
+Enjoy the *process* because soon it's going to be all over for another year.
 
 
 
@@ -131,7 +131,7 @@ Try to enjoy the process because soon it's going to be all over for another year
 <br/>
 ## Traversing the graph
 
-The video below aims to help build your intuition for how densely connected the graph for 3km to the Finish Line is. When hovering the mouse over any particular node, all of its connections will be highlighted. Note how sparsely connected the (green) group 1 runners are compared to the rest of the field. Likewise for the back of the field, located at the other extremity of the graph.
+The video below aims to illustrate how densely connected the graph for 3km to the Finish Line is. When hovering the mouse over any particular node, all of its connections will be highlighted. Note how sparsely connected the (green) group 1 runners are compared to the rest of the field. Likewise for the back of the field, located at the other extremity of the graph.
 <iframe width="750" height="515" src="https://www.youtube.com/embed/IHEMSaKLELg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 **3km to the Finish Line: Graph traversal**
 
@@ -169,7 +169,7 @@ We find that these runners have extremely small interaction graphs which means t
 
 Comparitively speaking, the trail is congestion free so it would almost be like running a 100km time trial. Just consider that for a moment: ~10hrs of ultra-pace redlining through the Blue Mountains. Luckily the Blue Mountains are so beautiful. For these athletes, mental toughness is equal to, if not more important, to physical resilience.
 
-They run in a bubble, seem to enjoy the bubble, and the bubble rarely pops.
+They run in a bubble, seem to enjoy the bubble, and their bubble rarely pops.
 
 
 ### Top 3 Males
@@ -212,13 +212,13 @@ Marcin Swierc barely ran with anyone all day. 2nd and 3rd place men had roughly 
 
 Similarly for the top 3 women. Amy Lamprecht had much less interaction than compared to the 2nd and 3rd womenplace women, Angélique Plair and Emma Roca respectively.
 
-Let's look into the distribution of runner interactions for the graph.
+Let's look into the distribution of runner interactions for the graph. For every runner it plots the number of interactions they had aka. the number of lines joining them to other runners.
 
 <img src ="/assets/img/gephi_3km_to_finish_line_ave_degree_report_screenshot.png"/>
 
 **Degree distribution for runner interactions from the 3km checkpoint to the finish line**
 
-The average degree, aka average num of interactions is ~150 people. The top 3 male runners had ~50x less than the average, and the top 3 women had ~10-15 times less. At the tail end of the distribtion is someone who had almost 700 interactions, at the very least.
+The average num of interactions is ~150 people. The top 3 male runners had ~50x less than the average, and the top 3 women had ~10-15 times less. At the tail end of the distribtion is someone who had almost 700 interactions! This is our stand-out group 7 runner again.
 
 <br/>
 <br/>
@@ -226,9 +226,7 @@ The average degree, aka average num of interactions is ~150 people. The top 3 ma
 <br/>
 ## Graph Inflation 
 
-This section doesn't add anything new to the present discussion but is included purely for aesthetics. Part of creating graph visualizations is choosing how best to layout the nodes. Too dense and you can't see much, too dilute and it's hard to fit everything on the one screen. A common algorithm used is called the Fruchterman Reingold algorithm. Starting with all the nodes and edges overlapping each other, we apply this algorithm and record the 'inflation' process. 
-
-<!-- The one thing to note is how the degree of connectedness slows down the expansion of the graph. More computations are required.-->
+This section doesn't add anything new to the present discussion but is included purely for aesthetics. Part of creating graph visualizations is choosing how best to layout the nodes. Too dense and you can't see much, too dilute and it's hard to fit everything on screen. A common algorithm used is called the Fruchterman-Reingold algorithm. Starting with all the nodes and edges overlapping each other, we apply this algorithm and record the 'inflation' process. 
 
 Enjoy.
 
@@ -248,9 +246,9 @@ Enjoy.
 <br/>
 ## Closing thoughts
 
-Graphs were created for every runner between each checkpoint and qualitative analysis was undertaken. We saw how sparsely connected the front runners were compared to the rest of the field, how different stages of the race displayed different amounts and types of start group mixing, and how Furber Steps dramatically alters the runner experience. For the better.
+Graphs were created for every runner between select checkpoints and qualitative analysis was undertaken. We saw how sparsely connected the front runners were compared to the rest of the field, how different stages of the race displayed different amounts and types of start group mixing, and how Furber Steps dramatically alters the runner experience.
 
-Next up in [Part 3][part-3] we take a deep dive into understanding the training of the top 10 performers with the hope of learning something for ourselves.
+Next up in [Part 3][part-3] we take a deep dive into understanding the training of the top 10 runners. Understanding how they train may help you with your training: what to focus on, what not to.
 <br/>
 <br/>
 <br/>
