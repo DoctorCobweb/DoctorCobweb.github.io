@@ -6,9 +6,9 @@ categories: running
 ---
 
 
-Welcome to the final installment of the UTA 100 2019 series. The previous two posts covered general runner performances and runner interactions throughout the course, respectively. It is now time to zoom in on a select number of individuals.  
+Welcome to the final installment of the UTA 100 2019 series. The previous two posts covered general runner performances and runner interactions throughout the course, respectively. It is now time to zoom in on a select number of high-performant individuals.  
 
-This post is dedicated to understanding how the top 10 runners trained during the lead up to the event. Hopefully we can all learn something that can be taken away and implemented into our own training plans, as-is or slightly modified.
+This post is dedicated to observing and understanding how the top 10 runners trained for the event. Hopefully we can all learn something that can be taken away and implemented into our own training plans, as-is or slightly modified.
 
 There will be some suprises. 
 
@@ -43,13 +43,13 @@ There will be some suprises.
 <br/>
 ## Individual training approaches of Top 10
 
-[Strava][strava] is a popular fitness app used for storing training sessions. In addition to keeping track of each session, Strava shows weekly and yearly statistics that helps athletes oversee their progression within any training block.
+[Strava][strava] is a popular fitness app used for storing training sessions. In addition to keeping track of each session, Strava shows weekly and yearly statistics to help athletes manage their progression within any training block.
 
-The training data for the top 10 athletes who had Strava accounts was used to create the graphs, and analysis that follows. Before proceeding an important statement needs to be made:
+The training data for the top 10 athletes who had Strava accounts was used to create the analysis contained herein. Before proceeding an important statement needs to be made:
 
->Unless otherwise stated: the rolling-mean of any given quantity is used to create a graph rather than the actual values.
+>Unless otherwise stated: the rolling-mean of any given quantity is used to create a graph.
 
-Here's the justification: A rolling-mean smooths over fine-scale variations in the data thus enabling larger-scale trends to become more apparent. No single session is the key to a successful performance. Rather it is the compilation and sequencing of many sessions together, each of which builds upon the ground left by the previous session. The use of a rolling-mean is the mathematical embodiment of this idea. 
+Here's the justification: A rolling-mean smooths over fine-scale variations in the data, thus enabling larger-scale trends to become more apparent. No single session is the key to a successful performance. Rather it is the compilation and sequencing of many sessions together, each of which builds upon the ground left by the previous session. The use of a rolling-mean is the mathematical embodiment of this idea. 
 
 There is however one parameter that is needed to be supplied a priori for any rolling-mean calculation: how many values to include when computing the rolling-mean for any given point, aka the `window width`. Here we are concerned with weekly training data so the `window width` will be in terms of weeks. Since typical training blocks can range anywhere from 8 to 20+ weeks, using a `window width` that's less than 8 weeks will capture effects within the shortest training blocks observed. 
 
@@ -71,7 +71,7 @@ The following graphs are weekly run distance using a rolling-mean with `window w
 
 Vlad was apparently leading the race until having to dropout due to injury. Even though he didn't finish, his training data contains a wealth of knowledge and detail. Weekly volume was amoung the highest across the top 10 athletes with very few days spent not running. Vlad is a back-to-back winner at Six Foot Track, which is considered to be one of the most competetive trail races in Australia. It conveniently shares some common ground with the UTA 100 course, providing future UTA runners with some local knowledge.
 
-Vlad reached a peak weekly mean distance of approximately 210km before appearing to go into taper mode for Six Foot Track. He raced much more than what is annotated on the graph, some 10kms for instance. These were left off for the sake of clarity. The training blocks are clearly evident: the build up to a bunch of high volume weeks, followed by a taper period before a race, race week, then the gradual return to volume.
+Vlad reached a peak weekly mean distance of approximately 210km before appearing to go into taper mode for Six Foot Track. He raced much more than what is annotated in the graph, some 10kms for instance. These were left off for the sake of clarity. The training blocks are clearly evident: the build up to a bunch of high volume weeks, followed by a taper period before a race, race week, then the gradual return to volume.
 
 Speed sessions were common, as so were weekly long runs. Sometimes long runs contained substantial vertical gain, sometimes very little. The focus of flatter long runs is to build the ability to run continually for a long period of time, whilst long runs with decent vertical gain promote leg and core strength, work on power hiking effeciency, and improve trail skills needed to traverse technical sections fast.
 
@@ -83,7 +83,7 @@ Occasional flat long runs was a trait commonly observed across the top 10 athlet
 <br/>
 ### Marcin Swierc - 1st - 09:31:15
 
-Marcin does have a Strava profile but appears to not upload frequently, thus rendering a formal analysis of his training impossible. It would have been nice to see considering is the 2018 TDS champion. Some basic research and YouTube-ing reveals he basically wins almost everything he enters. Truly a world class athlete.
+Marcin does have a Strava profile but appears to not upload frequently, thus rendering a formal analysis of his training impossible. It would have been nice to see considering he is the 2018 TDS champion. Some basic research and YouTube-ing reveals he basically wins almost everything he enters. Truly a world class athlete.
 <br/>
 <br/>
 
@@ -94,11 +94,11 @@ Marcin does have a Strava profile but appears to not upload frequently, thus ren
 <div style="text-align: center"><img  width="90" height="40" src="/assets/img/training_legend.png"></div>
 <br/>
 
-Jonathan trained the least amount out of all top 10 runners (assuming his Strava profile is complete). This was quite suprising. How could someone train so little, relatively speaking, yet blaze across the line in 2nd place at one of the most competitive ultra trail races in Australia?
+Jonathan trained the least amount out of all top 10 runners (assuming his Strava profile is complete). This was very suprising. How could someone train so little, relatively speaking, yet blaze across the line in 2nd place at one of the most competitive ultra trail races in Australia?
 
-Besides a few indoor bike sessions and swimming there was not much cross training and no racing in the lead up to UTA, in total contrast to all top 10 athletes. Jonathan did however do his long runs on the actual UTA 100 course and was again the only one to do intense step training sessions. UTA 100 is known as having quite a lot of stairs going both up and down. It appears that Jonathan's training was very *specific* to UTA 100. Faster sessions were also seen, often incorporated later on into a run.
+Besides a few indoor bike sessions and swimming there was not much cross training and no racing in the lead up to UTA. In total contrast to all top 10 athletes. Jonathan did however do his long runs on the actual UTA 100 course and was the only one to do intense step training sessions. UTA 100 is known for having quite a lot of stairs going both up and down. It appears that Jonathan's training was very *specific* to UTA 100. Faster sessions were also seen, often incorporated later on in a run.
 
-He is one of only four runners to have completed *every* UTA. That's every race from 2008 to the present. His knowledge of the course and experience must have played a significant role in efficiently training and competing on the day. All the data points towards Jonathan being an extremely talented runner, who has been running ultras for at least 11 years, and who knows exactly how to approach the course. With the possible addition of a little bit of Lady Luck on the day (as we all hope for), Jonathan's run ranks up there as being one of the best performances seen this year.
+He is one of only four runners to have completed *every* UTA. Every race from 2008 to the present. His knowledge of the course and experience must have played a significant role in efficiently training and competing on the day. All the data points towards Jonathan being an extremely talented runner, who has been running ultras for at least 11 years, and who knows exactly how to approach the course. With the possible addition of a little bit of luck on the day, as we all do, Jonathan's run ranks up there as being one of the best performances seen this year. Few can argue that.
 <br/>
 <br/>
 
@@ -109,11 +109,11 @@ He is one of only four runners to have completed *every* UTA. That's every race 
 <div style="text-align: center"><img  width="90" height="40" src="/assets/img/training_legend.png"></div>
 <br/>
 
-Morgan consistently had a weekly mean distance of 100km to 150km, with dips below 100km only due to having a race. This suggests Morgan was able to stay injury free over the last 10 months. The highest weekly mean distance was a little over 150km before tapering for the Mt Solitary 43km race in Arpil. Following Mt Solitary it only took one week of rest before training volume bounced sharply back to pre race values. 
+Morgan consistently had a weekly mean distance of 100km to 150km, with dips below 100km only due to having a race. This suggests Morgan was able to stay injury free over the last 10 months. The highest weekly mean distance was a little over 150km before tapering for the Mt Solitary 43km race in April. Following Mt Solitary it only took one week of rest before training volume bounced sharply back to pre race values. 
 
 Riding was consistenly seen to be invoked but at very low amounts. 
 
-Morgan competed in UTMB 2018, which is a mountain ultra race that loops around Mt Blanc, starting in Chamonix France. It's a flagship race that attracts the most competitive and talented runners from around the globe. UTMB comes in at 171km with 10,040m of vertical gain with the top runners finishing it under 20hrs. TDS, the race Marcin Swierc won, is one of the sister races for UTMB.
+Morgan competed in UTMB 2018, which is a mountain ultra race that loops around Mt Blanc, starting in Chamonix France. It's a flagship race that attracts the most competitive and talented runners from around the globe. UTMB comes in at 171km with 10,040m of vertical gain with the top runners finishing it around 20hrs. TDS, the race that Marcin Swierc won, is one of the sister races for UTMB.
 
 We also see the presence of shorter 10km races.
 <br/>
@@ -129,11 +129,11 @@ We also see the presence of shorter 10km races.
 
 Justin utilized swimming and riding the most out of the top 10.
 
-The 2nd half of 2018 saw practically no running at all. Instead there was loads of road and mountain bike riding. Rides consistently had at least 500m of vertical gain, peaking at a single week having 400kms with ~12,500m of vertical ascent due to competing in the Pioneer MTB Race in New Zealand. Riding predominantly builds strength in the major muscle groups (quads, calves etc), as opposed to the smaller, stabalizer-like muscles commonly associated with running on trails. Trail running still needs raw base-level strength coming from the major muscle groups and riding provides another avenue towards achieving this, albeit with reduced risk of injury due to riding being zero impact.
+The 2nd half of 2018 saw practically no running at all. Instead there was loads of road and mountain bike riding. Rides consistently had at least 500m of vertical gain, peaking at a single week having 400kms with ~12,500m of vertical ascent due to competing in the Pioneer MTB Race in New Zealand. Riding predominantly builds strength in the major muscle groups (quads, calves etc), as opposed to the smaller, stabalizer-like muscles commonly associated with running on trails. Trail running still needs raw base-level strength coming from the major muscle groups, and riding provides another avenue towards achieving this, albeit with reduced risk of injury due to riding being a zero impact activity (except for the jolts due to MTB riding).
 
-Swimming increased concurrently with running volume. This suggests that swimming is being used as a form of active recovery in exchange for running more and riding less. Running and riding share some similarities when it comes to which muscle groups are employed during activity and so reducing one when the other increases seems like a logical thing to do. 
+Swimming increased concurrently with running volume. This suggests that swimming was used as a form of active recovery in exchange for running more and riding less. Running and riding share some similarities when it comes to which muscle groups are employed during activity and so reducing one when the other increases seems like a logical thing to do. 
 
-Starting from January, Justin had a consistent build in running volume with little, to no, drop in volume. Nearing UTA, the intensity of training really ramped up with Justin participating in 3 trail events within a space of 4-8 weeks. One event saw Justin compete in a 22km trail event, then turn around and run back to the start line. These types of long runs at intensity not only benefit a runner's physical state but also their mental fortitude, crucial for longer events like UTA 100km.
+Starting from January, Justin had a consistent increase in running volume with little, to no, drop in volume. Nearing UTA, the intensity of training really ramped up with Justin participating in 3 trail events within a space of 4-8 weeks. One event saw Justin compete in a 22km trail event, then turn around and run back to the start line. These types of long runs at intensity not only benefit a runner's physical state but also their mental fortitude, crucial for longer events like UTA 100km.
 
 Justin trained smart and consistently. There appeared to be no signs of injury during the build up, testament to the cross training/ active recovery methodology. 
 <br/>
@@ -148,7 +148,7 @@ Justin trained smart and consistently. There appeared to be no signs of injury d
 
 Mike had a weekly mean running distance of 100km to 150km, for the 7 months preceding UTA. There didn't appear to be any form of cross training uploaded to Strava, and there were distinct training blocks observed. Events participated in were mainly of the marathon-like distances, except for one all-nighter event where distance topped out at 63km.
 
-Towards the peak of UTA training back to back long runs were used, with the second one less than the first. Treadmill sessions were common, as also was Parkrun as a speed session. In addition to just doing a Parkrun, some of his long runs *contained* a Parkrun. Workouts were also common, sometimes outside, sometimes on the treadmill. Mike probably used the treadmill the most out of all top 10 runners. Treadmills offer an efficient and effective use of one's time. They are also `controlled` sessions, where once the pace is set it forces the runner to hold it.
+Towards the peak of UTA training, back to back long runs were used with the second one shorter than the first. Treadmill sessions were common, as also was Parkrun used for a speed session. In addition to just doing a Parkrun, some of his long runs *contained* a Parkrun. Workouts were also common, sometimes outside, sometimes on the treadmill. Mike probably used the treadmill the most out of all top 10 runners. Treadmills offer an efficient and effective use of one's time. They are also *controlled* sessions, where once the pace is set it forces the runner to hold it.
 <br/>
 <br/>
 
@@ -159,9 +159,9 @@ Towards the peak of UTA training back to back long runs were used, with the seco
 <div style="text-align: center"><img  width="90" height="40" src="/assets/img/training_legend.png"></div>
 <br/>
 
-Scott had a weekly mean running distance of 30km to 100km across the 10 months preceding UTA. Races during this period were more of the ultra-type distance, with the Surf Coast Century 100km featuring in September 2018. Swimming was a popular method of cross training and riding feature also, but to a lesser extent. During most of the 'build' phases in running volume, swimming volume also increased. This suggests that swimming was used as a form of active recovery.
+Scott had a weekly mean running distance of 30km to 100km across the 10 months preceding UTA. Races during this period were more of the ultra-type distance, with the Surf Coast Century 100km featuring in September 2018. Swimming was a popular method of cross training and riding feature also, to a lesser extent. During most of the 'build' phases in running volume, swimming volume also increased. This suggests that swimming was used as a form of active recovery.
 
-Mean weekly running distance was on the lower side when compared to the rest of the top 10, but this may be due to Scott spending a little extra time recovering from ultra-length races. The sustained loading and effort that comes from racing ultras needs to be respected, taking a little extra time to get back into proper training is probably a good idea. Avoiding a career ending injury is the ultimate goal.
+Mean weekly running distance was on the lower side when compared to the rest of the top 10, but this may be due to Scott spending a little extra time recovering from ultra-length races. The sustained loading and effort that comes from racing ultras needs to be respected, where taking a little extra time to get back into proper training is probably a good idea. Avoiding a career ending injury is the ultimate goal.
 
 Scott commonly did speed sessions, tempos, and recovery hikes.
 <br/>
@@ -184,7 +184,7 @@ Swimming was a very popular form of cross training and active recovery. Matt was
 
 We're beginning to see a trend here with swimming and high performance running...
 
-Matt ran tempos, long hill sessions both long (double repeat of a 1150m peak) and short, and sometimes there were flat long runs instead of one containing decent amounts of vertical gain. Easy general aerobic runs were 7-13km and easy walks/hikes after an intense week were common.
+Matt ran tempos, long hill sessions both long and short (a long double repeat of a 1150m peak was observed), and sometimes there were flat long runs. Easy general aerobic runs were 7-13km and easy walks/hikes after an intense week were common.
 <br/>
 <br/>
 
@@ -221,9 +221,9 @@ Being a professional coach requires hosting a lot of group training sessions. So
 <div style="text-align: center"><img  width="90" height="40" src="/assets/img/training_legend.png"></div>
 <br/>
 
-Anthony had a decent 6 month build-up going into UTA. Preceding the build-up was a 3-4 month period dealing with an ongoing injury. Cross training was used to maintain some sort of fitness and once the injury healed riding was phased out. Swimming was maintained throughout the build-up which had a peak mean weekly distance of ~10km right before UTA.
+Anthony had a decent 6 month build-up going into UTA. Preceding the build-up was a 3-4 month period dealing with an ongoing injury. Cross training was used to maintain some sort of fitness and once the injury healed, riding was phased out. Swimming was maintained throughout the build-up which had a peak mean weekly distance of ~10km right before UTA.
 
-Besides Six Foot Track, Anthony did not appear to race. Coming back from injury probably warranted a more conservative approach when it came to competing. Thankfully racing Six Foot Track didn't cause the injury to resurface, allowing for a successful UTA campaign to be. During the taper period for Six Foot Track, running volume was reducedwhereas swimming volume increased, similarly for the taper for UTA.
+Besides Six Foot Track, Anthony did not appear to race. Coming back from injury probably warranted a more conservative approach when it came to competing. Thankfully racing Six Foot Track didn't cause the injury to resurface, allowing for a successful UTA campaign. During the taper period for Six Foot Track, running volume was reduced whereas swimming volume increased. Similarly for the taper for UTA.
 <br/>
 <br/>
  
@@ -237,9 +237,9 @@ Besides Six Foot Track, Anthony did not appear to race. Coming back from injury 
 
 Styles of training varied amoung the top 10. Most runners incorporated some form of cross training, either while injured or as a means of low-impact active recovery. Swimming was by far the most popular. During the past 10 months of training data, all athletes were active. In other words, there were no long periods devoid of physical activity. If they weren't running, they were doing something else.
 
-Due to most athletes racing so fequently, there were clear training blocks present in the data, ranging from ~8 weeks to 12 weeks. The recovery phase of any one block usually lasted 1-3 weeks and contained easier running, walks, and cross training. Virtually no athlete did no activity during a recovery phase: active recovery was absolutey favoured instead of doing nothing. For those who didn't race frequently we saw a consitent build-up, with cycles of training blocks stretched out much greater than 12 weeks. The rate of increase in volume was smaller for those runners who race less. In other words, frequent racers bounced back to higher volumes quicker.
+Due to most athletes racing so fequently, there were clear training blocks present in the data, ranging from ~8 weeks to 12 weeks. The recovery phase of any one block usually lasted 1-3 weeks and contained easier running, walks, and cross training. Virtually no athlete did no activity during a recovery phase: active recovery was absolutey favoured instead of doing nothing. For those who didn't race frequently, we saw a consitent build-up with cycles of training blocks stretched out much greater than 12 weeks. The rate of increase in volume was smaller for those runners who race less. In other words, frequent racers bounced back to higher volumes quicker.
 
-Six Foot Track is a popular race amoungst the top 10. 5 of the runners competed this year and placed well. As is mt Solitary ultra. Both these races are in the Blue Mountains which must add to the 'local knowledge' used by the runners to perform well in the UTA 100 event.
+Six Foot Track is a popular race amoungst the top 10. Half of the top 10 runners competed in Six Foot Track and placed well. Mt Solitary ultra was also quite popular. Both of these races are in the Blue Mountains which must add to the 'local knowledge' used by the runners to perform well in the UTA 100 event.
 
 This type of behaviour is a testament to the strength and ability of the top 10. Their bodies can manage the stress because they train smart. That's worth repeating:
 
@@ -257,16 +257,16 @@ The following graph depicts long term trends.
 
 <img src="/assets/img/weekly_distance_rolling_average.png">
 
-By the time UTA hits we see that that all the runners have **different** weekly mean distances. There is no magic number of kilometers to reach, if there were then we would've expected the top runners in UTA to at least converge somewhat. What this really means is that each runner has a training plan that's suited to them. There are no cookie-cutter courses for becoming a good ultra runner, we can only learn things in terms of broad-strokes, take the information into consideration, and implement a training plan it in a way that's suitably adapted for our own bodies.
+By the time UTA hits we see that that all the runners have **different** weekly mean distances. There is no magic number of kilometers to reach, if there were then we would've expected the top runners in UTA to at least converge somewhat. What this really means is that each runner has a training plan that's suited to them. There are no cookie-cutter courses for becoming a good ultra runner, we can only learn things in terms of broad-strokes, take the information into consideration, and implement a training plan in a way that's suitably adapted for our own bodies.
 
 The big whammy is getting an injury that requires months to heal. These runners don't seem to have that happening to them.
 
-Later on we will see that despite runners having different weekly training volumes, there is more of a consensus on the long run, probably the most important run of the week for an ultra runner.
+Later on we will see that despite runners having different weekly training volumes, there is more of a consensus on the long run. Probably the most important run of the week for an ultra runner.
 
 
 Justin Whitley had the longest, most consistent increase in running. He used swimming as a means to balance the loading and it seems to have payed off with a great result.
 
-The most *consistent* runner was Matt Crehan: his running rolling-mean weekly line was the *flatest* out of the lot. Morgan Lindqvist was a close second except for the increase near March 2019. Naively one would expect that having a flat trend would be the result of not racing much (ie. no recovery weeks, no peak weeks), but he was the 2nd most frequent racer, second only to Brendan Davies. Matt was able race and train without little dipping in overall running training. Similarly to Justin Whitley, Matt swam alot. Often 2-4 sessions per week. But this is only one factor contributing to having such a successful training period. One needs to also look into weekly long runs, speed sessions etc.
+The most *consistent* runner was Matt Crehan: his mean-weekly line was the *flatest* out of the lot. Morgan Lindqvist was a close second except for the increase near March 2019. Naively one would expect that having a flat trend would be the result of not racing much (ie. no recovery weeks, no peak weeks), but he was the 2nd/3rd most frequent racer, passed by the like of Brendan Davies and Vlad Shatrov. Matt was able to race and train without little dipping in overall running training. Similarly to Justin Whitley, Matt swam alot. Often 2-4 sessions per week. But this is only one factor contributing to having such a successful training period. One needs to also look into weekly long runs, speed sessions etc.
 
 Brendan Davies and Vlad Shatrov had the highest volume and Jonathan O'Loughlin had the least.
 
@@ -278,9 +278,9 @@ Brendan Davies and Vlad Shatrov had the highest volume and Jonathan O'Loughlin h
 ## Weekly vertical ascent
 <img src="/assets/img/weekly_ascent_rolling_average.png">
 
-Nearing race day, the 3 highest average weekly ascent performers were Mike Carroll, Brendan Davies, and Justin Whitley. Right before UTA 100 they were averaging (over the last 8 weeks), 3-4k of vertical ascent per week. The rest of the top 10 had 1.5-2.5k vertical gain average.
+Nearing race day, the 3 highest average weekly ascent performers were Mike Carroll, Brendan Davies, and Justin Whitley. Right before UTA 100 they were averaging (over the last 8 weeks), 3-4k of vertical ascent per week. The rest of the top 10 had 1.5-2.5k meters of vertical gain average.
 
-Justin Whitley and Jonathan O'Loughlin had the steepest increase in weekly average vertical ascent. Based on overall training volume, one may have expected Vlad Shatrov to have a weekly average vertical ascent closer to the 3 highest in the graph above. But this wasn't the case. He did compete in Six Foot Track, and we see that there was a drop closer to the start of April. Vlad still maintained a large volume of running so it must have been more flat running, on average. Perhaps he was dealing with the injury that would lead to his DNF at UTA, but without further information this remains speculation.
+Justin Whitley and Jonathan O'Loughlin had the steepest increase in weekly average vertical ascent. Based on overall training volume, one may have expected Vlad Shatrov to have a weekly average vertical ascent closer to the 3 highest in the graph above. But this wasn't the case. He did compete in Six Foot Track, and we see that there was a drop closer to the start of April. Vlad still maintained a large volume of running so it must have been more flat running, on average. Perhaps he was dealing with the injury that would lead to his DNF at UTA, but without further information this remains purely speculation.
 
 <br/>
 <br/>
@@ -288,15 +288,13 @@ Justin Whitley and Jonathan O'Loughlin had the steepest increase in weekly avera
 <br/>
 ## The.Weekly.Long.Run 
 
-Few things conjure up more anxiety, and statisfication once done, than the weekly long run. Especially as peak training load nears. Going to bed the night before knowing you're already fatigued and that when you awake there's, say, a 40km long run to rattle you from your bed, is a daunting prospect for most of us. Nothing prepares you more for how an ultra feels than a long run when you're already tired from a block of training. This is where the mental and physical sides meet. The weakest side will bring down the other.
-
-This is where we go to learn our muster.
+Few things conjure up more anxiety, and statisfication once done, than the weekly long run. Especially as peak training load nears. Going to bed the night before knowing you're already fatigued and that when you awake there's, say, a 40km long run to rattle you from your bed, is a daunting prospect for most of us. Nothing prepares you more for how an ultra feels than a long run when you're already tired. This is where the mental and physical sides meet. The weakest side will bring down the other.
 
 ### Long run distance
 <img src="/assets/img/weekly_long_run_distance_rolling_average.png">
 
 
-From Febuary 2019 to race day we see that, the rolling average for weekly long run distance for 8 out of 10 runners almost converge. In other words, these 8 runners are running roughly the same distance for their long run. Looking at April 2019 we see that most of the graph lines have a value between 30-40km. And because we are using a rolling mean with a window of 8 weeks this means that *at the start of April, most runners for the past 8 weeks have been running on average between 30km to 40km for their long runs*.
+From Febuary 2019 to race day we see that, the weekly mean long run distance for 8 out of 10 runners almost *converge*. In other words, these 8 runners are running roughly the same distance for their long run. Looking at April 2019 we see that most of the graph lines have a value between 30-40km. And because we are using a rolling mean with a window of 8 weeks this means that *at the start of April, most runners for the past 8 weeks have been running on average between 30km to 40km for their long runs*.
 
 The outliers for this period are Jonathan O'Loughlin and Justin Whitley. They dramatically ramp up their long run distances towards UTA 100 as compared to the other top 10.
 
@@ -307,7 +305,7 @@ Looking back at the weekly running distances graph we note something interesting
 
 The most common amount of vertical ascent for the weekly longest run is 1000-1500m, followed by 0-500. Here we arbitrarily decide that a run must be at least 30km in order to be considered a long run.
 
-We see 2 common types of long runs employed:
+We see 2 common types of long runs:
 
 1. Flat long run with less than 500m vertical ascent
 2. Long run with 1000-1500m vertical ascent
@@ -330,7 +328,7 @@ The rest of the top 10 had a range of ~500m to ~1300m for their mean long run ve
 
 From Feb 2019 to race day the top 10 runners dont seem to run more than 4 hrs for their long runs, on average. At first this comes as a suprise because it's easy to expect that the top 10 must be out there running for longer. That is certainly the case for *weekly* training duration, but their long runs cap at 4hrs during this period.
 
-But it makes sense when thinking about the overall training load: the risk of overtraining and injury is too great when running for too long, and given that these runners have high training volume they need to be able to run the next day, and the next, and ... add (almost) infinitum.
+But it makes sense when thinking about the overall training load: the risk of overtraining and injury is too great when running for too long, and given that these runners have high weekly training volume, consistent daily running is required.
 
 <br/>
 <br/>
@@ -339,7 +337,7 @@ But it makes sense when thinking about the overall training load: the risk of ov
 ## Run days
 <img src="/assets/img/number_of_days_running_per_week.png">  
 
-The top 10 runners most often run 7 days a week. Enough said.
+The top 10 runners most often run 7 days a week.
 
 <br/>
 <br/>
@@ -350,11 +348,13 @@ The top 10 runners most often run 7 days a week. Enough said.
 
 Except for one runner, all the top 10 had at least 50% of their training weeks containing either a speed, or tempo, or hill session. Race weeks were also counted as a session (except for uta race week).
 
-Brendan Davies had the most weeks containing at least one session. In addition, he consistently had the highest weekly training volume out of the top 10 runners which marks brendan as a high performance athlete who is able to handle high work loads and frequent competition. Similarly for Vlad Shatrov. ~90% of the Brendan's and Vlad's weeks contained at least one session.
+Brendan Davies had the most weeks containing at least one session. In addition, he consistently had the highest weekly training volume out of the top 10 runners which marks Brendan as a high performance athlete who is able to handle high work loads and frequent competition. Similarly for Vlad Shatrov. Around 90% of the their weeks contained at least one session.
 
-Anthony Boyle is at the other end of the session spectrum. He did little to no sessions and appeared to only race Six Foot Track before UTA. Yet he placed 10th at UTA. Anthony swam the most out of all the top 10, rapidly vamping up swimming even more as UTA got closer. He also frequently had weeks where there was a 35km+ long run and a mid-week double run commute day of 20km+20km. This suggests the importance of strength for both the upper body core and legs. Having a 40km day composed of running to work, working all day, and then running home must surely benefit the runner with being able to handle fatigue, mentally and physically. Knowing that a 20km run lays ahead of you when having a busy day must train the mental strength to 'just get it done'. Ultras have the ability to find any weakness, no matter how small, and exploit it. Often the consequence of said exploitation is to render the runner a nicely minted DNF. Being able to combat that with training days like Anthony's double commutes must surely be advantageous when such issues arise during a race. And you bet ya they arise, for every runner out there.
+Anthony Boyle is at the other end of the session spectrum. He did little to no sessions and appeared to only race Six Foot Track before UTA. Yet he placed 10th at UTA. Anthony swam the most out of all the top 10, ramping up more swimming as UTA got closer. He also frequently had weeks having a 35km+ long run and mid-week double run commute day of 20km+20km. This suggests the importance of strength for both the upper body core and legs. Having a 40km day composed of running to work, working all day, then running home teaches you how to handle fatigue, both mentally and physically.    
 
-Speed sessions are known to improve running efficiency, so Anthony may have be making up for any apparent lack of efficiency with shear strength. It's difficult to say for certain because there's only one example of this training style in the top 10. One would need many more runners that invoke this performance/technique before concluding that this is actually the case. For now, we call it a working hypothesis.
+Ultras have the ability to find any weakness, no matter how small, and exploit it. Often the consequence is to render the runner a nicely minted DNF. Being able to 'train out' your weaknesses must surely be advantageous for when such issues arise during race day.  
+
+Speed sessions are known to improve running efficiency. A small improvement in each step, multiplied many many times over the course of a 100km, makes for a big overall improvement.
 
 <br/>
 <br/>
@@ -364,17 +364,17 @@ Speed sessions are known to improve running efficiency, so Anthony may have be m
 
 1. The top 10 runners are running 6-7 days a week.
 
-2. Nearing UTA, the rolling average (in the last 8 weeks) for long runs is 35-40km. The most common amount of vertical gain for a long run was 1000m to 1500m. The next most common being 0-500m, suggesting that long flat runs were alson utilised. One must keep in mind that since we are using rolling averages of long run distance, we expect that there to be long runs exceeding 40km/ 1500m and some less. For example, one week may contain a 50km long run with lots of vert, then the following run may contain a flatter 30km long run.
+2. Nearing UTA, the rolling average (in the last 8 weeks) for long runs is 35-40km. The most common amount of vertical gain for a long run was 1000m to 1500m. The next most common being 0-500m, suggesting that long flat runs were also utilised. 
 
-3. Speed/tempo/hill work is important and is done at least every other week.
+3. Speed/tempo/hill work is important and is done at least every other week by the majority of the top 10.
 
-4. Top 10 runners raced frequently across the 10month period of data. Some raced as much as ~10 times.
+4. Racing was frequent across the 10 month period of data. Some athletes raced as much as ~10 times during this period.
 
-5. Swimming is commonly employed for active recovery and in building core strength.
+5. Swimming was commonly employed as a form of active recovery and to build core strength.
 
 6. By the time UTA 100 occurs, most of the top 10 runners are averaging (across the last 8 weeks) a weekly vertical ascent of 1500m to 2250m. This is unexpectedly low but one must remember that we are talking about a *rolling average*, so there will be weeks exceeding and below this amount. 3 of the top 10 runners are averaging a much higher amount, 3000m to 4000m.
 
-7. Jonathan O'Loughlin's performance, given his comparitive low volume training, stands out amoungst the rest. If his Strava data is actually complete ie. every training session was uploaded to Strava, then local knowledge coupled with training specificity (stair workouts, on course long runs), talent, and some luck, seems to be another route towards a great performance. But given that Jonathan has consistently placed highly across the 11 times he's competed, leads one to suspect that it's more talent rather than luck.
+7. Local knowledge of the course was obtained by the athletes from running in other events which contained much of the UTA 100 course.
 
 <br/>
 <br/>
@@ -383,13 +383,10 @@ Speed sessions are known to improve running efficiency, so Anthony may have be m
 
 ## Closing thoughts
 
-Hopefully you enjoyed this in-depth series of posts on the UTA 100km 2019 event. Thanks for reading and I hope you are in a better position now to reach your goals, however optimistic they are. What matters in the end is not really the result, but to maximise your enjoyment out on the trails. It's pretty easy to when your body and mind allows you to run through the Blue Mountains for a whole day.
+Hopefully you enjoyed this in-depth series of posts on the UTA 100km 2019 event. Thanks for reading and I hope you are now in a better position to reach your goals, however optimistic they are. What matters in the end is not really the result, but to maximise your enjoyment out on the trails. It's pretty easy to when your body and mind allows you to run through the Blue Mountains for a whole day.  
 
-Enjoy the suffering a little more.
+That is what is afforded to you when you train cleverly.
 
-Enourage each other a little more.
-
-And don't forget to breath it all in.
 
 <br/>
 <br/>
